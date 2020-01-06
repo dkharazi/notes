@@ -15,7 +15,7 @@ paginate_path:       "page:num"
 
 # About/contact
 author:
-  name:              Mark Otto
+  name:              Darius Kharazi
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
