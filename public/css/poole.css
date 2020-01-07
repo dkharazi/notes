@@ -36,8 +36,6 @@
  */
 
 * {
-  -moz-transform: scale(0.9);
-  zoom: 0.9;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -45,6 +43,7 @@
 
 html,
 body {
+  zoom: 0.5;
   margin: 0;
   padding: 0;
 }
