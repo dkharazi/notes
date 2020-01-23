@@ -1,0 +1,6 @@
+name = "Lanyon"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+homepage = "http://localhost:1313/"
+sectionPagesMenu = "main"

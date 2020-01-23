@@ -1,0 +1,29 @@
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Params.Title }} &middot; {{ .Site.Params.Tagline }}
+    {{ else }}
+      {{ .Title }} &middot; {{ .Site.Params.Title }}
+    {{ end }}
+  </title>
+
+  <!-- CSS -->
+  <link href="/css/poole.css" rel="stylesheet" type="text/css">
+  <link href="/css/lanyon.css" rel="stylesheet" type="text/css">
+  <link href="/css/syntax.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
