@@ -76,6 +76,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav li+li {
+  margin-left: 0.5rem;
+}
 
 /*
  * Wrapper
@@ -100,17 +108,30 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 28rem;
 }
+
 @media (min-width: 38rem) {
   .container {
     max-width: 38rem;
   }
 }
+
 @media (min-width: 56rem) {
   .container {
     max-width: 38rem;
   }
 }
 
+@media (min-width: 34em) {
+  .masthead-title {
+    float: left;
+  }
+}
+
+@media (min-width: 34em) {
+  .masthead {
+    text-align: right;
+  }
+}
 
 /*
  * Masthead
@@ -376,10 +397,6 @@ a.sidebar-nav-subitem:focus {
   color: #268bd2; /* #00CED1 */
   font-weight: bold;
   font-size: 2.5rem;
-}
-.page-title,
-.post-title {
-  margin-top: 0;
 }
 
 .page-title,

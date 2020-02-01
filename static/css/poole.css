@@ -59,6 +59,7 @@ html {
 }
 
 body {
+  padding: 2rem 1.5rem;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -340,10 +341,6 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: #303030;
-}
-.page-title,
-.post-title {
-  margin-top: 0;
 }
 
 /* Meta data line below post title */
