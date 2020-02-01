@@ -3,10 +3,9 @@ title: "Counting"
 draft: true
 weight: "6"
 katex: true
-markup: mmark
 ---
 
-### General Description
+### Representing Data using Counts
 - All throughout statistics, there are many important metrics and representations of data that involve counting
 - In reference to discrete random variables, the concept of counting data comes up everywhere
 - Even in reference to continuous random variables, foundational concepts, such as probability density funcitons, involve the concept of counting data

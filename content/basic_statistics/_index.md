@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Probability and Statistics"
+title: "Probability and Statistics"
 draft: true
 weight: "2"
 ---

@@ -1,14 +1,13 @@
 {{ partial "header.html" . }}
-
-<h1 class="list-title">
-    {{ .Title }}
-</h1>
-<div class="page-list">
+  
+<div class="posts">
 {{ range .Data.Pages }}
 
 <ul>
   <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
   </li>
 </ul>
 {{ end }}
