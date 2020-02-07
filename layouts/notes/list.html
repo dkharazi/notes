@@ -1,0 +1,17 @@
+{{ partial "header_notes.html" . }}
+
+<h1 class="notes-title">
+    {{ .Title }}
+</h1>
+<div class="notes-list">
+{{ range .Data.Pages }}
+
+<ul>
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </li>
+</ul>
+{{ end }}
+</div>
+
+{{ partial "footer_notes.html" . }}

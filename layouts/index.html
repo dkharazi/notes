@@ -1,16 +1,21 @@
-{{ partial "header.html" }}
+{{ partial "header.html" . }}
 
-<div class="posts">
-{{ range .Data.Pages }}
-
-<ul>
-  <li>
-    <a href="{{ .Permalink }}">
-      {{ .Title }}
-    </a>
-  </li>
-</ul>
+<div class="archive">
+{{ range (where .Site.Home.Pages "Section" "blog") }}
+  {{ range .Pages }}
+    {{ $year := dateFormat "2006" .Date }}
+    {{ $nextyear := 1 }}
+    {{ with .NextInSection }} {{ $nextyear = (dateFormat "2006" .Date) }} {{ end }}
+    {{ if (ne $year $nextyear) }}
+      <h2 class="archive-year"> {{ $year }} </h3>
+    {{ end }}
+    <div class="archive-item">
+      <span class="post-date archive-date">{{ dateFormat "January 02, 2006" .Date }}</span>
+      <a href="{{ .URL }}" class="archive-title">{{ .Title }}</a>
+    </div>
+  {{ end }}
 {{ end }}
 </div>
+
 
 {{ partial "footer.html" . }}

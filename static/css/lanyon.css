@@ -18,13 +18,17 @@
  * Contents
  *
  * Global resets
+ * Custom Types
+ * Messages
+ * Notes Section
+ * Navigation
+ * Wrapper
  * Masthead
  * Sidebar
  * Slide effect
  * Posts and pages
  * Pagination
  * Reverse layout
- * Themes
  */
 
 
@@ -34,6 +38,12 @@
  * Update the foundational and global aspects of the page.
  */
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* Prevent scroll on narrow devices */
 html,
 body {
@@ -42,39 +52,301 @@ body {
 
 html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+body {
+  padding: 2rem 1.5rem;
+  color: #515151;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #268bd2; /* #00CED1 */
   letter-spacing: -.025rem;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
 }
 
-.page-list li a {
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  margin-top: 1rem;
   font-size: 1.5rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #005B81; /* #313131 */
-  letter-spacing: -.025rem;
-  padding-left: 0.6em;
 }
 
-.page-list ul {
+h3 {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+a {
+  color: #005B81; /* #268bd2 */
+  text-decoration: none;
+}
+
+a strong {
+  color: inherit;
+}
+
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #bf616a;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+}
+
+strong {
+  color: #303030;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  /* margin-bottom: 0.5rem; */
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
+/* Misc */
+hr {
+  height: 2px;
+  background-color: #303030;
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  /* border-top: 1px solid #eee; */
+  /* border-bottom: 1px solid #fff; */
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+/* Code */
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+}
+
+.gist .markdown-body {
+  padding: 15px;
+}
+
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+
+.gist .gist-file .gist-data {
+  font-size: .8rem !important;
+  line-height: 1.4;
+}
+
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+img {
+  display: block;
+  margin: 0.7rem auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9;
+}
+
+
+/*
+ * Notes Section
+ *
+ * Display notes to users in the form of singles and lists.
+ *
+ */
+
+/* Single and List title for notes section */
+.notes-title {
+  color: #268bd2; /* #00CED1 */
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.notes-list ul {
   list-style: none;
   padding-left: 0;
 }
 
-.page-list li a:before {
+.notes-list ul:first-child {
+  margin-top: 2.25rem;
+}
+
+.notes-list li a {
+  font-size: 1.5rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: -.025rem;
+  padding-left: 0.6em;
+}
+
+.notes-list li a:before {
   content: "»";
   display: inline-block;
   padding-right: 0.2em;
 }
 
-
-.page-list li a:hover {
+.notes-list li a:hover {
   text-decoration: underline;
 }
+
+
+/*
+ * Navigation
+ *
+ * Display navigation properties.
+ *
+ */
 
 .nav li {
   list-style: none;
@@ -84,6 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav li+li {
   margin-left: 0.5rem;
 }
+
 
 /*
  * Wrapper
@@ -106,32 +379,18 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 28rem;
+  max-width: 38rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
 }
 
-@media (min-width: 38rem) {
-  .container {
-    max-width: 38rem;
-  }
+.container-archive {
+  max-width: 32rem;
+  margin: 0 auto;
 }
 
-@media (min-width: 56rem) {
-  .container {
-    max-width: 38rem;
-  }
-}
-
-@media (min-width: 34em) {
-  .masthead-title {
-    float: left;
-  }
-}
-
-@media (min-width: 34em) {
-  .masthead {
-    text-align: right;
-  }
-}
 
 /*
  * Masthead
@@ -140,24 +399,45 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top: 1rem;
   /* border-bottom: 1px solid #eee; */
 }
+
+.masthead::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 3rem auto;
+  background-color: #ccc;
+}
+
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  color: #313131;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
 }
-.masthead-title a {
-  color: #505050;
+
+.masthead .masthead-title a {
+  color: #313131;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
+
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.masthead a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #505050;
+  font-size: 1rem;
 }
 
 @media (max-width: 48rem) {
@@ -166,6 +446,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .masthead-title small {
     display: none;
+  }
+}
+
+@media (min-width: 34em) {
+  .masthead-title {
+    float: left;
+    color: #313131;
+    font-size: 1.5rem;
+  }
+  .masthead {
+    text-align: right;
   }
 }
 
@@ -208,39 +499,49 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Sidebar content */
-.sidebar a {
-  font-weight: normal;
-  color: #505050;
-}
-.sidebar-item {
-  padding: 0.1rem 1rem;
-  background-color: #f8f9fa;
-}
-
-.sidebar-item h6 {
-  font-size: 1.5rem;
-  font-weight: bold;
+/* Sidebar title nav */
+.sidebar-home a {
+  font-size: 1rem;
   letter-spacing: 0.025rem;
-  color: #313131;
+  color: #505050; /* #313131 */
 }
 
-.sidebar-item p:last-child {
-  margin-bottom: 0;
+.sidebar-home ul {
+  text-align: center;
+  padding: 1.0rem 0.5rem;
+  margin: 0;
+}
+
+.sidebar-home li {
+  display: inline-block;
+}
+
+.sidebar-home li+li {
+ margin-left: 2.5rem;
+}
+
+.sidebar-home::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 0.5rem auto;
+  background-color: #ccc;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
+
+.sidebar-nav-item:first-child {
+  margin-top: 1.5rem;
+}
+
 .sidebar-nav-item {
   display: block;
   padding: 0.5rem 1rem;
   border-top: 1px solid rgba(255,255,255,.1);
-}
-
-.sidebar-nav-item:first-child {
-  padding-top: 1.5rem;
 }
 
 .sidebar-nav-item.active,
@@ -275,9 +576,6 @@ a.sidebar-nav-subitem:focus {
     padding-left:  1.5rem;
     padding-right: 1.5rem;
   }
-  .sidebar-nav-item:first-child {
-  padding-top: 1.5rem;
-  }
 }
 @media (min-width: 48rem) {
   .sidebar-subitem {
@@ -302,7 +600,7 @@ a.sidebar-nav-subitem:focus {
   display: block;
   width: 2.2rem;
   padding: .5rem .65rem;
-  color: #313131;
+  color: #268bd2;
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
@@ -324,7 +622,7 @@ a.sidebar-nav-subitem:focus {
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #313131;
+  background-color: #268bd2;
 }
 
 @media (min-width: 30.1rem) {
@@ -379,7 +677,7 @@ a.sidebar-nav-subitem:focus {
 
 
 /*
- * Posts and pages
+ * Posts and archive
  *
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
@@ -390,20 +688,12 @@ a.sidebar-nav-subitem:focus {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
-.page-title,
-.post-title,
-.post-title a {
-  color: #268bd2; /* #00CED1 */
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-
-.page-title,
-.list-title {
-  margin-bottom: 2.5rem;
-  font-weight: bold;
-  font-size: 2.5rem;
+.post h1 {
+  color: #313131;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: .5rem;
 }
 
 /* Meta data line below post title */
@@ -412,6 +702,8 @@ a.sidebar-nav-subitem:focus {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  color: #ccc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Related posts */
@@ -437,6 +729,37 @@ a.sidebar-nav-subitem:focus {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+
+.archive h2 {
+  color: #313131;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.archive-date {
+  float: right;
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  color: #ccc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.archive-item {
+  margin-bottom: 0.5rem;
+}
+
+.archive-item a {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #505050;
+}
+
+.archive-item+.archive-year {
+  margin-top: 2rem;
 }
 
 
@@ -517,105 +840,3 @@ a.pagination-item:hover {
 }
 
 
-/*
- * Themes
- *
- * Apply custom color schemes by adding the appropriate class to the `body`.
- * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
- */
-
-/* Red */
-.theme-base-08 .sidebar,
-.theme-base-08 .sidebar-toggle:active,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #313131;
-}
-.theme-base-08 .container a,
-.theme-base-08 .sidebar-toggle,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:active,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #d28445;
-}
-.theme-base-09 .container a,
-.theme-base-09 .sidebar-toggle,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar,
-.theme-base-0a .sidebar-toggle:active,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #f4bf75;
-}
-.theme-base-0a .container a,
-.theme-base-0a .sidebar-toggle,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar,
-.theme-base-0b .sidebar-toggle:active,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #90a959;
-}
-.theme-base-0b .container a,
-.theme-base-0b .sidebar-toggle,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar,
-.theme-base-0c .sidebar-toggle:active,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #75b5aa;
-}
-.theme-base-0c .container a,
-.theme-base-0c .sidebar-toggle,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar,
-.theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .container a,
-.theme-base-0d .sidebar-toggle,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar,
-.theme-base-0e .sidebar-toggle:active,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #aa759f;
-}
-.theme-base-0e .container a,
-.theme-base-0e .sidebar-toggle,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar,
-.theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #8f5536;
-}
-.theme-base-0f .container a,
-.theme-base-0f .sidebar-toggle,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}

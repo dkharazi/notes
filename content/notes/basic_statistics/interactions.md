@@ -10,6 +10,15 @@ katex: true
 - An interactions term allows for a different slope of the regression lines between the response variable and the different combinations of predictor variables (involved in the interaction)
 - We may believe there is an interaction between two variables if the relationship between the response variable and a predictor variable depends on another predictor variable
 
+### Motivating Interaction Terms with Orange Juice
+- Let's say we're trying to predict the enjoyment of orange juice
+- Way may believe the enjoyment of orange juice can be predicted by two variables:
+	- If the juice has pulp
+	- If the juice is fresh
+- These variables may have some interaction between them when predicting how much someone enjoys orange juice
+- Specifically, I enjoy orange juice without pulp, if I'm just purchasing store-brand orange juice
+- However, I typically enjoy orange juice more with pulp if it's freshly made
+
 ### Example using Interaction Terms
 - Let's say we know the following:
 	- A *Height* variable that refers to the height of a shrub
