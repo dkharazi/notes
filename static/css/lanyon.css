@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  padding: 2rem 1.5rem;
+  margin: 0;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -348,6 +348,10 @@ tbody tr:nth-child(odd) th {
  *
  */
 
+ .nav {
+ 	margin: 0.5rem auto;
+ }
+
 .nav li {
   list-style: none;
   display: inline-block;
@@ -369,6 +373,7 @@ tbody tr:nth-child(odd) th {
 .wrap {
   position: relative;
   width: 100%;
+  padding: 3rem 1.5rem;
 }
 
 
@@ -387,8 +392,8 @@ tbody tr:nth-child(odd) th {
 }
 
 .container-archive {
-  max-width: 32rem;
-  margin: 0 auto;
+  /*max-width: 32rem;
+  margin: 0 auto;*/
 }
 
 
@@ -399,17 +404,20 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top: 1rem;
+  padding: 0.25rem 10rem;
+  background-color: #268bd2;
+  /*padding-top: 1rem;*/
   /* border-bottom: 1px solid #eee; */
+  margin-bottom: 2rem;
 }
 
 .masthead::after {
-  display: block;
+  /*display: block;
   content: "";
   width: 100px;
   height: 1px;
-  margin: 3rem auto;
-  background-color: #ccc;
+  margin: 1rem auto;
+  background-color: #ccc;*/
 }
 
 .masthead-title {
@@ -422,7 +430,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .masthead .masthead-title a {
-  color: #313131;
+  color: #fff;
   font-size: 1.25rem;
   text-decoration: none;
 }
@@ -436,8 +444,9 @@ tbody tr:nth-child(odd) th {
 
 .masthead a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #505050;
+  color: #fff;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 @media (max-width: 48rem) {
@@ -685,6 +694,7 @@ a.sidebar-nav-subitem:focus {
 
 .page,
 .post {
+  padding: 0rem 10rem;
   margin-bottom: 4em;
 }
 
@@ -731,6 +741,10 @@ a.sidebar-nav-subitem:focus {
   color: inherit;
 }
 
+.archive {
+  padding: 0rem 10rem;
+}
+
 .archive h2 {
   color: #313131;
   font-weight: bold;
@@ -753,9 +767,9 @@ a.sidebar-nav-subitem:focus {
 }
 
 .archive-item a {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #505050;
+  color: #005B81;
 }
 
 .archive-item+.archive-year {

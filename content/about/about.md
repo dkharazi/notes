@@ -4,4 +4,17 @@ date: 2020-01-07T17:33:47-05:00
 draft: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+I live in Columbus, Ohio and work on data science projects at Abercrombie.
+
+Before Abercrombie, I worked as a consultant while studying statistics and computer science at Ohio State University (Class of 2018). During college and high school, I made iOS apps and got involved in programming competitions. I started programming in JavaScript and Java when I was 14, but now I usually write code in Python. Most of my experience in the last few years has been machine learning, data engineering, and backend development. I occasionally [write code](https://github.com/dkharazi) for fun in my spare time.
+
+What about stuff outside of technology?
+
+- I'm addicted to soccer and Indian food
+- On top of that, I also enjoy skiing when I get the chance
+- I usually listen to either soft rock, indie pop, or lo-fi hip hop
+- I've done a triathlon and a few bike tours
+- I've been to dozens of countries (Spain is my favorite)
+- I played the piano actively for 10+ years
+- I want to stop eating meat one day
+- The Office is my favorite tv show
