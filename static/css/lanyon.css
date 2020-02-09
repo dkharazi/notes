@@ -307,37 +307,47 @@ tbody tr:nth-child(odd) th {
  */
 
 /* Single and List title for notes section */
+.notes-container {
+  padding: 0rem 10rem;
+}
+
 .notes-title {
   color: #268bd2; /* #00CED1 */
   font-weight: bold;
   font-size: 2.5rem;
 }
 
+.notes-list-title {
+  color: #313131; /* #00CED1 */
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
 .notes-list ul {
   list-style: none;
   padding-left: 0;
-}
-
-.notes-list ul:first-child {
-  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .notes-list li a {
-  font-size: 1.5rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  letter-spacing: -.025rem;
-  padding-left: 0.6em;
+  /*letter-spacing: -.025rem;*/
+  /*padding-left: 0.6em;*/
 }
 
 .notes-list li a:before {
-  content: "»";
+  /*content: "»";
   display: inline-block;
-  padding-right: 0.2em;
+  padding-right: 0.2em;*/
 }
 
 .notes-list li a:hover {
   text-decoration: underline;
+  color: #005B81;
 }
 
 
@@ -684,6 +694,23 @@ a.sidebar-nav-subitem:focus {
           transform: translateX(20rem);
 }
 
+/*
+ * About section
+ *
+ */
+
+.about {
+  padding: 0rem 10rem;
+  margin-bottom: 4em;
+}
+
+.about h1 {
+  color: #313131;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
 
 /*
  * Posts and archive
@@ -702,8 +729,7 @@ a.sidebar-nav-subitem:focus {
   color: #313131;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-  margin-bottom: .5rem;
+  font-size: 1.6rem;
 }
 
 /* Meta data line below post title */

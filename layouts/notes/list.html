@@ -1,17 +1,20 @@
-{{ partial "header_notes.html" . }}
+{{ partial "header.html" . }}
 
-<h1 class="notes-title">
-    {{ .Title }}
-</h1>
-<div class="notes-list">
-{{ range .Data.Pages }}
+<div class="notes-container">
+  <h1 class="notes-list-title">
+      {{ .Title }}
+  </h1>
+  <div class="notes-list">
+  {{ range .Data.Pages }}
 
-<ul>
-  <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </li>
-</ul>
-{{ end }}
+  <ul>
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  </ul>
+  {{ end }}
+  </div>
 </div>
 
-{{ partial "footer_notes.html" . }}
+{{ partial "footer.html" . }}
+
