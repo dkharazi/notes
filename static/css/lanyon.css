@@ -38,6 +38,25 @@
  * Update the foundational and global aspects of the page.
  */
 
+:root {
+  --font-default: "PT Serif", Georgia, "Times New Roman", serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --body-bg: #fff;
+  --body-color: #515151;
+  --link-color: #005B81;
+  --link-color-hover: #bf616a;
+  --link-border-color: rgba(0,0,0,.25);
+  --heading-color: #333;
+  --masthead-bg: #268bd2;
+  --masthead-color: #fff;
+  --hr-color: rgba(0,0,0,.1);
+  --kbd-color: var(--body-color);
+  --kbd-bg: #eee;
+  --code-color: rgba(212, 73, 80, 1);
+  --code-snippet-border: rgba(0,0,0,.05);
+  --blockquote-border: #e5e5e5
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -47,83 +66,103 @@
 /* Prevent scroll on narrow devices */
 html,
 body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-size: 21px;
-  line-height: 1.5;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+@media (min-width: 48em) {
+    html {
+        font-size: 21px
+    }
 }
 
 body {
-  margin: 0;
-  color: #515151;
-  background-color: #fff;
+  line-height: 1.5rem;
+  color: var(--body-color);
+  background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #268bd2; /* #00CED1 */
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--heading-color); /* #00CED1 */
   letter-spacing: -.025rem;
-  line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h3 {
-  margin-top: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h4, h5, h6 {
-  margin-top: 1rem;
   font-size: 1rem;
+}
+
+p+h1,
+p+h2,
+p+h3,
+ul+h1,
+ul+h2,
+ul+h3,
+ol+h1,
+ol+h2,
+ol+h3 {
+    margin-top: 1.5rem
+}
+
+strong {
+  font-weight: bold;
+  color: var(--heading-color);
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #005B81; /* #268bd2 */
+  font-weight: inherit;
+  line-height: inherit;
+  color: var(--link-color);
   text-decoration: none;
+  transition: all .2s ease-in-out;
+  -webkit-text-decoration-color: var(--link-border-color);
+  text-decoration-skip-ink: auto;
 }
 
 a strong {
   color: inherit;
 }
 
-/* `:focus` is linked to `:hover` for basic accessibility */
-a:hover,
-a:focus {
+/* :focus is linked to :hover for basic accessibility */
+a:hover {
   text-decoration: underline;
-  color: #bf616a;
-}
-
-/* Body text */
-p {
-  margin-top: 0;
-  /* margin-bottom: 0.5rem; */
-}
-
-strong {
-  color: #303030;
 }
 
 /* Lists */
 ul, ol, dl {
   margin-top: 0;
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+ul ul {
+  margin-top: .25rem;
+  margin-bottom: .5rem;
 }
 
 dt {
@@ -134,15 +173,13 @@ dd {
   margin-bottom: 0.5rem;
 }
 
-/* Misc */
 hr {
-  height: 2px;
-  background-color: #303030;
+  width: 100px;
+  height: 1px;
   position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  /* border-top: 1px solid #eee; */
-  /* border-bottom: 1px solid #fff; */
+  margin: 2rem auto;
+  background-color: var(--hr-color);
+  border: 0
 }
 
 abbr {
@@ -300,7 +337,7 @@ tbody tr:nth-child(odd) th {
 
 
 /*
- * Notes Section
+ * FIX Notes Section
  *
  * Display notes to users in the form of singles and lists.
  *
@@ -352,18 +389,63 @@ tbody tr:nth-child(odd) th {
 
 
 /*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  background-color: var(--masthead-bg);
+  color: var(--masthead-color);
+}
+
+.masthead::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 1rem auto;
+}
+
+@media (min-width: 34em) {
+  .masthead-title {
+    float: left;
+    color: #313131;
+    font-size: 1.5rem;
+  }
+  .masthead {
+    text-align: right;
+  }
+}
+
+.masthead a {
+  color: var(--masthead-color);
+  text-decoration: none;
+}
+
+.masthead-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+
+/*
  * Navigation
  *
  * Display navigation properties.
  *
  */
 
- .nav {
- 	margin: 0.5rem auto;
- }
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 
 .nav li {
-  list-style: none;
   display: inline-block;
 }
 
@@ -383,7 +465,7 @@ tbody tr:nth-child(odd) th {
 .wrap {
   position: relative;
   width: 100%;
-  padding: 3rem 1.5rem;
+  /*padding: 3rem 1.5rem;*/
 }
 
 
@@ -394,7 +476,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 32rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -404,79 +486,6 @@ tbody tr:nth-child(odd) th {
 .container-archive {
   /*max-width: 32rem;
   margin: 0 auto;*/
-}
-
-
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
-
-.masthead {
-  padding: 0.25rem 10rem;
-  background-color: #268bd2;
-  /*padding-top: 1rem;*/
-  /* border-bottom: 1px solid #eee; */
-  margin-bottom: 2rem;
-}
-
-.masthead::after {
-  /*display: block;
-  content: "";
-  width: 100px;
-  height: 1px;
-  margin: 1rem auto;
-  background-color: #ccc;*/
-}
-
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #313131;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
-}
-
-.masthead .masthead-title a {
-  color: #fff;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.masthead-title small {
-  font-size: 75%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: 0;
-}
-
-.masthead a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-@media (max-width: 48rem) {
-  .masthead-title {
-    text-align: center;
-  }
-  .masthead-title small {
-    display: none;
-  }
-}
-
-@media (min-width: 34em) {
-  .masthead-title {
-    float: left;
-    color: #313131;
-    font-size: 1.5rem;
-  }
-  .masthead {
-    text-align: right;
-  }
 }
 
 
@@ -700,16 +709,11 @@ a.sidebar-nav-subitem:focus {
  */
 
 .about {
-  padding: 0rem 10rem;
-  margin-bottom: 4em;
-}
-
-.about h1 {
-  color: #313131;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 2.5rem;
+  max-width: 32rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -721,15 +725,11 @@ a.sidebar-nav-subitem:focus {
 
 .page,
 .post {
-  padding: 0rem 10rem;
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }
 
-.post h1 {
-  color: #313131;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+.post {
+  position: relative;
 }
 
 /* Meta data line below post title */
@@ -737,9 +737,7 @@ a.sidebar-nav-subitem:focus {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
   color: #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* Related posts */
@@ -748,24 +746,33 @@ a.sidebar-nav-subitem:focus {
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
+
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
+
 .related-posts h3 {
   margin-top: 0;
 }
+
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
+
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
+
 .related-posts li a:hover small {
   color: inherit;
 }
+
+/*
+ * 2. FIX ARCHIVES
+ */
 
 .archive {
   padding: 0rem 10rem;
