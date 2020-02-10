@@ -1,6 +1,6 @@
 {{ partial "masthead.html" . }}
 
-<div class="archive">
+<div class="container">
 {{ range (where .Site.Home.Pages "Section" "blog") }}
   {{ range .Pages }}
     {{ $year := dateFormat "2006" .Date }}

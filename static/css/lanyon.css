@@ -1,20 +1,4 @@
 /*
- *  ___
- * /\_ \
- * \//\ \      __      ___   __  __    ___     ___
- *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
- *    \_\ \_/\ \_\.\_/\ \/\ \ \ \_\ \/\ \_\ \/\ \/\ \
- *    /\____\ \__/.\_\ \_\ \_\/`____ \ \____/\ \_\ \_\
- *    \/____/\/__/\/_/\/_/\/_/`/___/> \/___/  \/_/\/_/
- *                               /\___/
- *                               \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/lanyon.
- */
-
-
-/*
  * Contents
  *
  * Global resets
@@ -49,6 +33,7 @@
   --heading-color: #333;
   --masthead-bg: #268bd2;
   --masthead-color: #fff;
+  --post-date-color: #ccc;
   --hr-color: rgba(0,0,0,.1);
   --kbd-color: var(--body-color);
   --kbd-bg: #eee;
@@ -465,7 +450,6 @@ tbody tr:nth-child(odd) th {
 .wrap {
   position: relative;
   width: 100%;
-  /*padding: 3rem 1.5rem;*/
 }
 
 
@@ -481,11 +465,6 @@ tbody tr:nth-child(odd) th {
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
-}
-
-.container-archive {
-  /*max-width: 32rem;
-  margin: 0 auto;*/
 }
 
 
@@ -686,6 +665,7 @@ a.sidebar-nav-subitem:focus {
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+
 .wrap,
 .sidebar-toggle {
   -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -695,6 +675,7 @@ a.sidebar-nav-subitem:focus {
 #sidebar-checkbox:checked + .sidebar {
   visibility: visible;
 }
+
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -703,18 +684,6 @@ a.sidebar-nav-subitem:focus {
           transform: translateX(20rem);
 }
 
-/*
- * About section
- *
- */
-
-.about {
-  max-width: 32rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /*
  * Posts and archive
@@ -732,12 +701,19 @@ a.sidebar-nav-subitem:focus {
   position: relative;
 }
 
+.post-title h2 {
+  margin-bottom: 1rem;
+}
+
 /* Meta data line below post title */
 .post-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 1rem;
-  color: #ccc;
+  color: var(--post-date-color);
+}
+
+.post-body p:first-child {
+  margin-top: 0.5rem;
 }
 
 /* Related posts */
@@ -770,43 +746,36 @@ a.sidebar-nav-subitem:focus {
   color: inherit;
 }
 
-/*
- * 2. FIX ARCHIVES
- */
-
-.archive {
-  padding: 0rem 10rem;
-}
-
-.archive h2 {
-  color: #313131;
-  font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-}
-
 .archive-date {
   float: right;
   margin-left: 1rem;
   margin-top: 0;
   margin-bottom: 0;
   display: block;
-  color: #ccc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--post-date-color);
 }
 
 .archive-item {
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.archive-item + .archive-year {
+  margin-top: 2rem;
+}
+
+.archive-year {
   margin-bottom: 0.5rem;
 }
 
-.archive-item a {
-  /*text-decoration: underline;*/
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #005B81;
-}
-
-.archive-item+.archive-year {
-  margin-top: 2rem;
+@media (min-width: 34rem) {
+  .archive-item {
+    margin-bottom: 0.5rem
+  }
+  .archive-date {
+    float: right;
+    margin-left: 1rem
+  }
 }
 
 
