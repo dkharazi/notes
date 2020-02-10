@@ -1,8 +1,10 @@
 {{ partial "header_notes.html" . }}
 
-<h1 class="notes-title">
-  {{ .Title }}
-</h1>
-{{ .Content }}
+<div class="notes">
+  <h1 class="notes-title">
+    {{ .Title }}
+  </h1>
+  {{ .Content }}
+</div>
 
 {{ partial "footer_notes.html" . }}

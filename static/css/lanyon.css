@@ -2,15 +2,17 @@
  * Contents
  *
  * Global resets
- * Custom Types
+ * Custom types
  * Messages
- * Notes Section
- * Navigation
  * Wrapper
+ * Container
  * Masthead
+ * Navigation
  * Sidebar
  * Slide effect
- * Posts and pages
+ * Posts
+ * Blog archive
+ * Notes
  * Pagination
  * Reverse layout
  */
@@ -322,54 +324,31 @@ tbody tr:nth-child(odd) th {
 
 
 /*
- * FIX Notes Section
+ * Wrapper
  *
- * Display notes to users in the form of singles and lists.
- *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
  */
 
-/* Single and List title for notes section */
-.notes-container {
-  padding: 0rem 10rem;
+.wrap {
+  position: relative;
+  width: 100%;
 }
 
-.notes-title {
-  color: #268bd2; /* #00CED1 */
-  font-weight: bold;
-  font-size: 2.5rem;
-}
 
-.notes-list-title {
-  color: #313131; /* #00CED1 */
-  font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  margin-bottom: 2.5rem;
-}
+/*
+ * Container
+ *
+ * Center the page content.
+ */
 
-.notes-list ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0.5rem;
-}
-
-.notes-list li a {
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  /*letter-spacing: -.025rem;*/
-  /*padding-left: 0.6em;*/
-}
-
-.notes-list li a:before {
-  /*content: "»";
-  display: inline-block;
-  padding-right: 0.2em;*/
-}
-
-.notes-list li a:hover {
-  text-decoration: underline;
-  color: #005B81;
+.container {
+  max-width: 32rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
 }
 
 
@@ -436,35 +415,6 @@ tbody tr:nth-child(odd) th {
 
 .nav li+li {
   margin-left: 0.5rem;
-}
-
-
-/*
- * Wrapper
- *
- * The wrapper is used to position site content when the sidebar is toggled. We
- * use an outter wrap to position the sidebar without interferring with the
- * regular page content.
- */
-
-.wrap {
-  position: relative;
-  width: 100%;
-}
-
-
-/*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-  max-width: 32rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
 }
 
 
@@ -686,10 +636,10 @@ a.sidebar-nav-subitem:focus {
 
 
 /*
- * Posts and archive
+ * Posts
  *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
+ * Each post refers to a standard informational page, such as
+ * an about or projects page
  */
 
 .page,
@@ -746,6 +696,14 @@ a.sidebar-nav-subitem:focus {
   color: inherit;
 }
 
+
+/*
+ * Blog archive
+ *
+ * Each blog post is archived and displayed on the home page
+ * as a list and organized by date.
+ */
+
 .archive-date {
   float: right;
   margin-left: 1rem;
@@ -776,6 +734,34 @@ a.sidebar-nav-subitem:focus {
     float: right;
     margin-left: 1rem
   }
+}
+
+
+/*
+ * Notes
+ *
+ * Display notes to users in the form of singles and lists.
+ *
+ */
+
+.notes {
+  margin-top: 5rem;
+}
+
+.notes-title {
+  color: var(--masthead-bg);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.notes-list {
+  margin-bottom: 4rem;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
 }
 
 
