@@ -380,7 +380,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .masthead {
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   margin-bottom: 2rem;
   font-size: 1rem;
   background-color: var(--masthead-bg);
@@ -392,7 +392,7 @@ tbody tr:nth-child(odd) th {
   content: "";
   width: 100px;
   height: 1px;
-  margin: 0.5rem auto;
+  margin: 0.8rem auto;
 }
 
 @media (min-width: 34em) {
