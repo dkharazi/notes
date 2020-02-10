@@ -4,7 +4,9 @@
   <h1 class="notes-title">
     {{ .Title }}
   </h1>
-  {{ .Content }}
+  <div class="notes-content">
+    {{ .Content }}
+  </div>
 </div>
 
 {{ partial "footer_notes.html" . }}

@@ -748,12 +748,6 @@ a.sidebar-nav-subitem:focus {
   margin-top: 5rem;
 }
 
-.notes-title {
-  color: var(--masthead-bg);
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-
 .notes-list {
   margin-bottom: 4rem;
 }
@@ -762,6 +756,17 @@ a.sidebar-nav-subitem:focus {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0.5rem;
+}
+
+.notes-title {
+  color: var(--masthead-bg);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.notes-content h3 {
+  color: var(--masthead-bg);
+  margin-bottom: 1rem;
 }
 
 
