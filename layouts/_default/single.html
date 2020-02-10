@@ -1,8 +1,8 @@
-{{ partial "header_notes.html" . }}
+{{ partial "masthead.html" . }}
 
-<h1 class="post-title">
-  {{ .Title }}
-</h1>
-{{ .Content }}
+<div class="container">
+  <h2>{{ .Title }}</h2>
+  <div class="post">{{ .Content }}</div>
+</div>
 
-{{ partial "footer_notes.html" . }}
+{{ partial "footer.html" . }}
