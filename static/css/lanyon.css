@@ -474,7 +474,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .sidebar-home li+li {
- margin-left: 2.5rem;
+ margin-left: 1.5rem;
 }
 
 .sidebar-home::after {
