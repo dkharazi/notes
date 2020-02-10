@@ -767,6 +767,11 @@ a.sidebar-nav-subitem:focus {
 .notes-content h3 {
   color: var(--masthead-bg);
   margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.notes-content h3:first-child {
+  margin-top: 1rem;
 }
 
 
