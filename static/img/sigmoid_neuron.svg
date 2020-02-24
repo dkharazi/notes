@@ -6,35 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="300mm"
    height="120mm"
    viewBox="0 0 300 120"
    version="1.1"
-   id="svg95"
-   sodipodi:docname="neuron.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="680"
-     id="namedview32"
-     showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="519.92913"
-     inkscape:cy="226.77165"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g2091" />
+   id="svg95">
   <defs
      id="defs89" />
   <metadata
@@ -45,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -101,12 +77,14 @@
              id="tspan1999">Σ</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.93055554px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.93055534px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
            x="144.46249"
            y="243.25328"
            id="text2007"><tspan
-             sodipodi:role="line"
-             id="tspan81">𝑓</tspan></text>
+             x="144.46249"
+             y="243.25328"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.93055534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+             id="tspan2011">σ</tspan></text>
       </g>
       <image
          width="20.372917"

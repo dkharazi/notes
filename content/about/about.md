@@ -4,7 +4,7 @@ date: 2020-01-07T17:33:47-05:00
 draft: true
 ---
 
-I live in Columbus, Ohio and work on data science projects at Abercrombie.
+I live in Columbus, Ohio and work on a data science team at Abercrombie.
 
 Before Abercrombie, I worked as a consultant while studying statistics and computer science at Ohio State University (Class of 2018). During college and high school, I made iOS apps and got involved in programming competitions. I started programming in JavaScript and Java when I was 14, but now I usually write code in Python. Most of my experience in the last few years has been machine learning, data engineering, and backend development. I occasionally [write code](https://github.com/dkharazi) for fun in my spare time.
 

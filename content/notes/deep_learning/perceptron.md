@@ -5,13 +5,13 @@ weight: "1"
 katex: true
 ---
 
-### Motivating Perceptrons
+### Defining Perceptrons
 - A perceptron is a neuron
 - A perceptron takes in several binary inputs $x_{1}, x_{2}, ..., x_{n}$
 - A perceptron returns a single binary output $y$
 - A perceptron is a function that is the weighted sum function of inputs and weights
 
-$$ \sum_{i=j}^{n}w_{j}x_{j} $$
+$$ \sum_{j=1}^{n}w_{j}x_{j} $$
 
 - The perceptron's output is determined by whether the weighted sum is less than or greater than some *threshold value*
 
@@ -28,10 +28,16 @@ $$ \text{output} = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ th
 
 ![perceptron](/img/perceptron.svg)
 
+- We can see that the threshold evaluation function is the same as a step function that outputs 0 or 1 depending on the threshold
 - There are many different ways to illustrate a perceptron
 - Sometimes, we don't want to write out all of the weights and functions
 - Therefore, we typically assume some of the notation from the diagram above
 - As a result, we can also illustrate a perceptron as the following:
+	- $x_{i}$ is our input
+	- $w_{i}$ is our weight
+	- The weighted sum function is our transfer function
+	- The threshold evaluation function can be more generally respresented as $f$, which represents some activation function
+	- $y$ is our output
 
 ![neuron](/img/neuron.svg)
 
@@ -41,7 +47,7 @@ $$ \text{output} = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ th
 1. Is the weather good?
 2. Do we like wine?
 3. Are we going with friends?
-- We can represent these three factors as binary variables $x_{1}, x_{2}, and x_{3}$
+- We can represent these three factors as binary variables $x_{1}, x_{2},$ and $x_{3}$
 	- $x_{1} = 1$ if the weather is good
 	- $x_{2} = 1$ if we like wine
 	- $x_{3} = 1$ if we go with friends

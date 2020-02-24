@@ -5,35 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 300 120"
    height="120mm"
-   width="300mm"
-   sodipodi:docname="perceptron.svg"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1427"
-     inkscape:window-height="754"
-     id="namedview83"
-     showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="566.92913"
-     inkscape:cy="226.77165"
-     inkscape:window-x="-1"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g1216" />
+   width="300mm">
   <defs
      id="defs2">
     <marker
@@ -154,18 +130,16 @@
          x="177.70461"
          y="228.39505"
          ry="5.4731135" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.33812216;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.33812214, 1.01436643;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 184.67517,238.4861 h 14.2875"
-         id="path3793"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 186.26267,243.65993 h 5.29166 v -10.34765 h 5.55625"
-         id="path4606"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.115474"
+         x="186.32277"
+         y="243.56184"
+         id="text906"
+         transform="scale(1.0091813,0.99090222)"><tspan
+           id="tspan114"
+           x="186.32277"
+           y="243.56184">σ</tspan></text>
     </g>
     <g
        transform="matrix(0.44044427,0,0,0.43246657,63.978473,134.90275)"

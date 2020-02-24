@@ -37,6 +37,11 @@ katex: true
 2. Move the data into a higher dimension using kernel functions
 3. Find a support vector classifier that separates the higher dimensional data into two groups
 
+### Introducing Kernel Functions
+- A kernel function is a way of computing the dot product of two vectors $x and $y$
+- By doing this, we're able to produce the same output as applying a transformation (e.g. polynomial) to $x$ and $y$ individually
+- The benefit of using a kernel function is a performance boost, since we're applying significantly fewer transformations
+
 ### The Kernel Trick
 - A kernel function is used when data are non-linearly separable in its original space
 - A kernel is a function that takes its input vectors in the original space and returns the dot product of the vectors in a feature space
@@ -61,3 +66,4 @@ katex: true
 - [Illustrations of SVM](http://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf)
 - [Support Vector Machine Example](https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93)
 - [Support Vector Machine StatQuest Video](https://www.youtube.com/watch?v=efR1C6CvhmE)
+- [Motivation of Transformation Space](https://towardsdatascience.com/truly-understanding-the-kernel-trick-1aeb11560769)
