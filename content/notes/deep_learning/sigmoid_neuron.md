@@ -21,7 +21,7 @@ katex: true
 
 ### Defining Sigmoid Neurons
 - Sigmoid neurons are similar to perceptrons, but modified so that small changes in their weights and bias cause only a small change in their output
-- A sigmoid neuron takes in several inputs $x_{1}, x_{2}, ..., x_{n}$ *between* 0 and 1
+- A sigmoid neuron takes in several inputs $x_{1}, x_{2}, ..., x_{n}$ between 0 and 1
 	- For example, our input could be $0.685$
 - A sigmoid neuron returns a single output *between* 0 and 1
 - A sigmoid neuron uses a different activation function:

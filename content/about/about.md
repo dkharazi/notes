@@ -11,10 +11,10 @@ Before Abercrombie, I worked as a consultant while studying statistics and compu
 What about stuff outside of technology?
 
 - I'm addicted to soccer and Indian food
-- On top of that, I also enjoy skiing when I get the chance
+- On top of that, I enjoy skiing when I get the chance
 - I usually listen to either soft rock, indie pop, or lo-fi hip hop
 - I've done a triathlon and a few bike tours
-- I've been to dozens of countries (Spain is my favorite)
+- I'm halfway through visiting all 50 U.S. states
 - I played the piano actively for 10+ years
 - I want to stop eating meat one day
-- The Office is my favorite tv show
+- My favorite tv show is The Office

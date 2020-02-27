@@ -54,10 +54,36 @@ $$ f(x) = f^{3}(f^{2}(f^{1}(x))) $$
 - In other words, the learning algorithm must decide how to use these hidden layers to best implement an approximation of $f^{*}$
 - These layers are called *hidden layers* because the training data does not show the desired output for each of these layers
 
-### Representing Nonlinear Functions of X
-1. SVM using kernel functions
-2. Decision trees
-3. Deep learning using activation functions
+### Learning Nonlinear Functions
+- Sometimes our $y$ is a nonlinear function of $x$
+- In this case, we will want to transform $x$ so that $y$ becomes a linear function of $x$
+- We will usually want to apply the linear model to a transformed input $\phi(x)$, instead of applying a linear model to $x$ itself
+	- Here, $\phi$ is a nonlinear transformation
+- We can think of $\phi$ as a new representation of $x$
+- We can choose the mapping $\phi$ by using:
+	1. Generic feature mapping $\phi$ implicitely used in kernel functions
+		- These generic feature mappings are usually generalizations
+		- These generalizations usually produce poor predictions on a test set
+	2. Manually engineered $\phi$ functions
+		- Until the advent of deep learning, this was the dominant approach
+		- It requires decades of human effort for each separate task
+	3. Activation function used in deep learning
+		- The strategy of deep learning is to learn $\phi$:
+		$$ y = f(x;\theta,w) = \phi(x;\theta) $$
+		- In this approach, we now have the following:
+			- Parameters $\theta$ that we use to learn $\phi$
+			- Parameters $w$ that map from $\phi(x)$ to the desired output
+		- This is an example of a deep feedforward network
+
+### Feature Mapping using Activation Functions
+- This approach is the only one of the three that gives up on the convexity of the training problem, but the benefits outweigh the harms
+- In this approach, we parametrize the representation as $\phi(x;\theta)$
+- And, we use the optimization algorithm to find the $\theta$ that corresponds to a good representation
+- If we wish, this approach can capture the benefit of the first approach by being highly generic
+	- We do this by using a very broad family $\phi(x;\theta)$
+- Deep learning can also capture the benefit of the second approach by providing model customization
+	- Human practitioners can encode their knowledge to help generaliziation by designing families $\phi(x; \theta)$ that they expect will perform well
+	- The advantage is that the human designer only needs to find the right general function family, rather than precisely the right function
 
 ### References
 - [Feedfoward and Multi-Layer Perceptron Networks](http://www.deeplearningbook.org/contents/mlp.html)
