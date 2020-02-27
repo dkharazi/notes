@@ -37,9 +37,50 @@ katex: true
 2. Move the data into a higher dimension using kernel functions
 3. Find a support vector classifier that separates the higher dimensional data into two groups
 
-### Introducing Kernel Functions
-- A kernel function is a way of computing the dot product of two vectors $x and $y$
-- By doing this, we're able to produce the same output as applying a transformation (e.g. polynomial) to $x$ and $y$ individually
+### Motivating Feature Mapping
+- In lower dimensions, data is typically only non-linearly separable by some decision boundary
+- If we move our data into a higher dimension, our data can sometimes become linearly separable by a hyperplane
+- We can move our data into a higher dimension by mapping our features to some other feature space
+- This process of mapping features to another feature space is called feature mapping
+
+### Describing Feature Mapping
+- Feature mapping can be very expensive, since we would need to compute some transformation to create each new variable
+- For example, let's say we have two rows and three columns from the following table:
+
+|       | age | height | weight |
+| ----- | --- | ------ | ------ |
+| **x** | 22  | 160    | 170    |
+| **y** | 25  | 175    | 190    |
+
+- We can label our two data points as the following:
+
+$$ x = (a_{1}, h_{1}, w_{1})^{T} $$
+$$ y = (a_{2}, h_{2}, w_{2})^{T} $$
+
+- Here, $x$ and $y$ are in $3$ dimensions
+- If we perform feature mapping, $x$ and $y$ would be mapped to a $9$ dimensional space if we apply a polynomial mapping:
+
+$$ \phi(x) = (a_{1}^{2}, a_{1}h_{1}, a_{1}w_{1}, h_{1}a_{1}, h_{1}^{2}, h_{1}w_{1}, w_{1}a_{1}, w_{1}h_{1}, w_{1}^{2})^{T} $$
+$$ \phi(y) = (a_{2}^{2}, a_{2}h_{2}, a_{2}w_{2}, h_{2}a_{2}, h_{2}^{2}, h_{2}w_{2}, w_{2}a_{2}, w_{2}h_{2}, w_{2}^{2})^{T} $$
+
+- If we were to take the dot product $\phi(x)^{T}\phi(y)$, then this would be computationaly expensive:
+
+$$ \phi(x)^{T}\phi(y) = \text{O}(n^{2}) $$
+
+### Motivating Kernel Functions
+- It would be very useful if we could produce the output of $\phi(x)^{T}\phi(y)$ without actually calculating $\phi(x)$ and $\phi(y)$, since it's expensive to apply a polynomial mapping to such large vectors
+- The kernel function achieves this
+- A kernel function skips the feature mapping step, but still produces the same output as if we performed the dot product of our feature mapping
+- For example, we could calculate the polynomial kernel function:
+
+$$ k(x,y) = (x^{T}y)^{2} $$
+$$ k(x,y) = (a_{1}a_{2} + h_{1}h_{2} + w_{1}w_{2}) $$
+
+- Compared to mapping features to some feature space, the kernel function is generally less expensive
+
+$$ k(x,y) = \text{O}(n) $$
+
+- The kernel function benefits from performing a dot product in the beginning, rather than performing a dot product on the already polynomial-transformed features in the feature mapping
 - The benefit of using a kernel function is a performance boost, since we're applying significantly fewer transformations
 
 ### The Kernel Trick
@@ -67,3 +108,6 @@ katex: true
 - [Support Vector Machine Example](https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93)
 - [Support Vector Machine StatQuest Video](https://www.youtube.com/watch?v=efR1C6CvhmE)
 - [Motivation of Transformation Space](https://towardsdatascience.com/truly-understanding-the-kernel-trick-1aeb11560769)
+- [More on the Kernel Trick](https://medium.com/@zxr.nju/what-is-the-kernel-trick-why-is-it-important-98a98db0961d)
+- [More on Feature Mapping](https://www.quora.com/In-machine-learning-what-is-a-feature-map)
+- [Application of SVM](https://infolab.usc.edu/DocsDemos/NG2Ibook_sharifzadeh_mehdi_01.pdf)
