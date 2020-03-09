@@ -1,7 +1,7 @@
 ---
 title: "Feedforward Networks"
 draft: true
-weight: "4"
+weight: "5"
 katex: true
 ---
 
@@ -84,6 +84,16 @@ $$ f(x) = f^{3}(f^{2}(f^{1}(x))) $$
 - Deep learning can also capture the benefit of the second approach by providing model customization
 	- Human practitioners can encode their knowledge to help generaliziation by designing families $\phi(x; \theta)$ that they expect will perform well
 	- The advantage is that the human designer only needs to find the right general function family, rather than precisely the right function
+
+---
+
+### tldr
+- When we want to find nonlinear decision boundaries, we transform $x$ so that $y$ becomes a linear function of $x$
+- We will usually want to apply the linear model to a transformed input $\phi(x)$, instead of applying a linear model to $x$ itself
+- Feedforward networks are multilayer perceptrons are *feedforward* neural networks where input data $x$ goes through functions $f$ to produce the output $y$
+- Data in feedforward networks are never fed backwards
+
+---
 
 ### References
 - [Feedfoward and Multi-Layer Perceptron Networks](http://www.deeplearningbook.org/contents/mlp.html)

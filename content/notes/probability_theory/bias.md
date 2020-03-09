@@ -5,6 +5,12 @@ weight: "7"
 katex: true
 ---
 
+### Introducing Bias
+- Bias typically refers to the amount of training error
+- Variance typically refers to the amount of testing error
+- Roughly, bias tends to occur when we capture noise instead of signal
+- Our goal is to find a model that has low bias and low variance
+
 ### Decomposition of Error
 - An error is the difference between our true value and our observed value
 - We typically refer to our population parameter as our true value

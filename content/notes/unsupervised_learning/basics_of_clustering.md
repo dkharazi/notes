@@ -5,7 +5,7 @@ weight: "2"
 katex: true
 ---
 
-## Motivating Categorization
+### Motivating Categorization
 - Dividing data into discrete categories is one of the most common kinds of data mining task
 - Often these categories are things which are given to us in advance (i.e. based on historical data)
 - Some examples of categories that could be given to us:

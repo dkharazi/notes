@@ -1,7 +1,7 @@
 ---
 title: "Architecture of Neural Networks"
 draft: true
-weight: "3"
+weight: "4"
 katex: true
 ---
 
@@ -42,6 +42,14 @@ katex: true
 - The output layer will contain just a single neuron
 - We could decide that an output value less than $0.5$ will indicate the *input image is not a $9$*
 - Therefore, values greater than $0.5$ will indicate *input image is a $9$*
+
+---
+
+### tldr
+- An input neuron is a single input
+- A hidden neuron is a function
+- An output neuron is a function
+---
 
 ### References
 - [Architecture of Neural Networks](http://neuralnetworksanddeeplearning.com/chap1.html#the_architecture_of_neural_networks)

@@ -100,18 +100,18 @@ $$ [2,2] $$
 $$ [2,1] $$
 $$ [1,2] $$
 
-10. We can now calculate the probability that a document belongs to each topic by summing the number of words in a certain topic and dividing that quantity by the total number of words within the document
+10a. We can now calculate the probability that a document belongs to each topic by summing the number of words in a certain topic and dividing that quantity by the total number of words within the document
 
 $$ [0.5,0.5] $$
 $$ [0.66,0.33] $$
 $$ [0.33,0.66] $$
 
-10. We can also calculate the probability of a word belonging to each topic by summing the number of words in a certain topic and dividing that quantity by the total number number of words in that topic
+10b. We can also calculate the probability of a word belonging to each topic by summing the number of words in a certain topic and dividing that quantity by the total number number of words in that topic
 
 $$ [0,0.4,0.4,0,0.2,0] $$
 $$ [0.5,0,0,0.25,0,0.25] $$
 
-## References
+### References
 - [Latent Dirichlet Allocation Wiki](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
 - [Example of LDA and tSNE](https://shuaiw.github.io/2016/12/22/topic-modeling-and-tsne-visualzation.html)
 - [Topic Modeling with LDA](https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/)

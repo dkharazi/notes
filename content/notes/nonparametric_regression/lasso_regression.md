@@ -11,7 +11,7 @@ katex: true
 - Lasso regression mitigates the problem of multicollinearity in regression, and thus mitigates the problem of overfitting
 - Lasso regression achieves this by shrinking the OLS cofficients to exactly zero
 
-##$ Mathematics behind Lasso Regression
+### Mathematics behind Lasso Regression
 - When using OLS, the coefficients can often create a ridge in the coefficient space, meaning many different coefficients on the space can do as well (or nearly as well)
 - By adding the penalty (or tuning factor), the coefficient space can be lifted up to provide better coefficient estimates compared to the OLS coefficient space
 - This adjusted coefficient space doesn't guarantee better coefficient estimates, but it can be helpful to explore when looking at additional regression techniques

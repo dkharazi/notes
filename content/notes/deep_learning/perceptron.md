@@ -1,22 +1,25 @@
 ---
 title: "Introducing Perceptrons"
 draft: true
-weight: "1"
+weight: "2"
 katex: true
 ---
 
 ### Defining Perceptrons
 - A perceptron is a neuron
-- A perceptron takes in several binary inputs $x_{1}, x_{2}, ..., x_{n}$
-- A perceptron returns a single binary output $y$
-- A perceptron is a function that is the weighted sum function of inputs and weights
+- A perceptron takes in several inputs $x_{1}, x_{2}, ..., x_{n}$
+	- These input could be binary values or real-valued inputs
+- A perceptron returns a single binary output $y$:
+
+$$ y \in \lbrace 0,1 \rbrace $$
+
+- A perceptron is a function that returns the weighted sum function of inputs and weights
 
 $$ \sum_{j=1}^{n}w_{j}x_{j} $$
 
 - The perceptron's output is determined by whether the weighted sum is less than or greater than some *threshold value*
 
-$$ \text{output} = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ threshold} \cr 1 &\text{if } \sum_{j}w_{j}x_{j} > \text{ threshold} 
-\end{cases} $$
+$$ y = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ threshold} \cr 1 &\text{if } \sum_{j}w_{j}x_{j} > \text{ threshold} \end{cases} $$
 
 ### Illustrating Perceptrons
 - We can think of our previously defined perceptron as the following:
@@ -44,9 +47,9 @@ $$ \text{output} = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ th
 ### Perceptron Analogy 
 - Let's say there is a wine festival coming up this weekend
 - We may make our decision by weighing up three factors:
-1. Is the weather good?
-2. Do we like wine?
-3. Are we going with friends?
+	1. Is the weather good?
+	2. Do we like wine?
+	3. Are we going with friends?
 - We can represent these three factors as binary variables $x_{1}, x_{2},$ and $x_{3}$
 	- $x_{1} = 1$ if the weather is good
 	- $x_{2} = 1$ if we like wine
@@ -97,9 +100,19 @@ $$ \text{output} = \begin{cases} 0 &\text{if } \sum_{j}w_{j}x_{j} \leq \text{ th
 	$$ \text{output} = \begin{cases} 0 &\text{if } w \cdot x + b \leq 0 \cr 1 &\text{if } w \cdot x + b > 0
 \end{cases} $$
 	- Where $b \equiv -\text{threshold}$
-- We can think of the bias as a measure of how easy it is to get the perceptron to output a $1$
+- We can think of the bias as a shift or adjustment to our decision boundary
+- We can also think of the bias as a measure of how easy it is to get the perceptron to output a $1$
 - If the bias is very positive, then it is very easy for the perceptron to output a $1$
 - If the bias is very negative, then it is very difficult for the perceptron to output a $1$
+
+---
+
+### tldr
+- A perceptron is a single neuron, which is a function
+- Meaning, a perceptron receives some input
+- And, a perceptron returns an output
+
+---
 
 ### References
 - [Using Neural Nets to Recognize Handwriting](http://neuralnetworksanddeeplearning.com/chap1.html)

@@ -1,7 +1,7 @@
 ---
 title: "Support Vector Machines"
 draft: true
-weight: "7"
+weight: "9"
 katex: true
 ---
 

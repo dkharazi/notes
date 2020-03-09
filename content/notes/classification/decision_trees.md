@@ -1,7 +1,7 @@
 ---
 title: "Decision Trees"
 draft: true
-weight: "2"
+weight: "3"
 katex: true
 ---
 

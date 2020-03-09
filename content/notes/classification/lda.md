@@ -1,7 +1,7 @@
 ---
 title: "Linear Discriminant Analysis"
 draft: true
-weight: "5"
+weight: "7"
 katex: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Sigmoid Neurons"
 draft: true
-weight: "2"
+weight: "3"
 katex: true
 ---
 
@@ -21,9 +21,12 @@ katex: true
 
 ### Defining Sigmoid Neurons
 - Sigmoid neurons are similar to perceptrons, but modified so that small changes in their weights and bias cause only a small change in their output
-- A sigmoid neuron takes in several inputs $x_{1}, x_{2}, ..., x_{n}$ between 0 and 1
-	- For example, our input could be $0.685$
-- A sigmoid neuron returns a single output *between* 0 and 1
+- A sigmoid neuron takes in several inputs $x_{1}, x_{2}, ..., x_{n}$ 
+- A sigmoid neuron returns a single output *between* 0 and 1:
+
+$$ f(z) \in (0,1) $$
+
+- For example, our output could be $0.685$
 - A sigmoid neuron uses a different activation function:
 
 $$ f(z) \equiv \frac{1}{1+e^{-z}} $$
@@ -33,12 +36,12 @@ $$ f(z) \equiv \frac{1}{1+e^{-z}} $$
 $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 
 - Specifically, the output of a sigmoid neuron is the following:
-
 	$$ \sigma(w \cdot x - b) \equiv \frac{1}{1+e^{-(w \cdot x - b)}} $$
 	- Where $w$ are our weights
 	- Where $b$ is our bias
 	- Where $x$ is our input
 
+### Illustrating Sigmoid Neurons
 - We can visually represent a sigmoid neuron as the following:
 	- Where $w_{i}$ is a weight
 	- Where $x_{i}$ is an input
@@ -59,6 +62,7 @@ $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 ![SigmoidNeuron](/img/sigmoid_neuron.svg)
 
 ### The Behavior of Sigmoid Neurons
+- The activation function of a perceptron is a step function
 - The sigmoid neuron behaves in a similar way to the perceptron
 - If $z \equiv w \cdot x + b$ is a large positive number, then $e^{−z} \approx 0$ and so $\sigma(z) \approx 1$
 - In other words, when $w \cdot x + b$ is large and positive, the output from the sigmoid neuron is approximately $1$
@@ -76,6 +80,20 @@ $$ \sigma(z) \equiv \frac{1}{1+e^{-z}} $$
 - We can also use a sigmoid neuron (with a given threshold) to represent binary output
 - In other words, we can set a threshold of $0.5$ to reflect the exact behavior of a perceptron
 - Compared to a perceptron, this gives us more flexibility to choose whatever threshold we see fit
+
+---
+
+### tldr
+- A neural network without an activation function is just a linear function
+- Different activation functions are used if:
+	- We want to return outputs in a certain range
+	- Use one that is monotonic
+	- Use one that has a monotonic derivative
+	- Use one that approximates identity near the origin
+- A sigmoid neuron is similar to perceptrons, but modified so that small changes in their weights and bias cause only a small change in their output
+- A sigmoid neuron returns output in the range of $(0,1)$
+
+---
 
 ### References
 - [Sigmoid Neurons and Deep Learning](http://neuralnetworksanddeeplearning.com/chap1.html#sigmoid_neurons)
