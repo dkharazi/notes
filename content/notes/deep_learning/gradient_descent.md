@@ -72,20 +72,21 @@ $$ \argmin_{\theta_{0}, \theta_{1}} J(\theta_{0}, \theta_{1}) $$
 
 $$ \theta_{0}, \theta_{1} = 0 $$
 
-6. Update parameters until our $J(\theta_{0}, \theta_{1})$ converges:
+6. Update parameters until our $J(\theta_{0}, \theta_{1})$ converges to a minumum:
 
-$$ \theta = \theta - (\alpha \times \frac{\partial}{\partial \theta}J(\theta_{0}, \theta_{1})) $$
-- Where J(\theta_{0}, \theta_{1}) is the quadratic cost function
+$$ \theta = \theta - (\alpha \times \frac{\partial J(\theta_{0}, \theta_{1})}{\partial \theta}) $$
+- Where $J(\theta_{0}, \theta_{1})$ is the quadratic cost function
 - Where $\alpha$ is our learning rate
 - Where $\theta$ is either $\theta_{0}$ or $\theta_{1}$
-- Where $\frac{\partial}{\partial \theta_{0}}J(\theta_{0}, \theta_{1}) = - \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x)-y)$
-- Where $\frac{\partial}{\partial \theta_{1}}J(\theta_{0}, \theta_{1}) = - \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x)-y)x$
+- Where $\frac{\partial J(\theta_{0}, \theta_{1})}{\partial \theta_{0}} = - \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x)-y)$
+- Where $\frac{\partial J(\theta_{0}, \theta_{1})}{\partial \theta_{1}} = - \frac{1}{m} \sum_{i=1}^{m}(h_{\theta}(x)-y)x$
 
 ### Translating Gradient Descent
 - The learning rate ensures we only take small steps
 - Meaning, even if we have a very large derivative, then we're only taking a very small step still
 - In other words, we won't *overreact* by only making small changes
 - Although the cost function will continue to be minimized until convergence, the parameters will swing back and forth like a pendulum until the cost function converges
+- For neural networks, $\frac{\partial J(\theta_{0}, \theta_{1})}{\partial \theta_{i}}$ is estimated using a training algorithm, such as backpropagation
 
 ### Gradient Descent Implementation
 
@@ -120,7 +121,7 @@ $$ \theta = \theta - (\alpha \times \frac{\partial}{\partial \theta}J(\theta_{0}
 
 ### tldr
 - Gradient Descent finds the parameters that minimize the cost function (error in prediction)
-- A gradient is a vector-valued function that represents the slope of the tangent of the graph of the function, pointing the direction of the greatest rate of increase of the function
+- A gradient is a vector-valued function that represents the slope of the tangent of the graph of the function, pointing in the direction of the greatest rate of increase of the function
 - It is a derivative that indicates the incline or the slope of the cost function
 
 ---
@@ -133,3 +134,5 @@ $$ \theta = \theta - (\alpha \times \frac{\partial}{\partial \theta}J(\theta_{0}
 - [Walkthrough of Gradient Descent](https://www.jeremyjordan.me/gradient-descent/)
 - [Gradient Descent Derivation](https://mccormickml.com/2014/03/04/gradient-descent-derivation/)
 - [Andrew Ng Lecture Notes](http://cs229.stanford.edu/notes/cs229-notes1.pdf)
+- [Gradient Descent Example](https://www.youtube.com/watch?v=sDv4f4s2SB8)
+- [Methods for Finding Local Minima](https://www.datasciencecentral.com/profiles/blogs/optimization-techniques-finding-maxima-and-minima)

@@ -101,6 +101,7 @@ $$ k(x,y) = \text{O}(n) $$
 - [Support Vector Machines for Binary Classification](https://uk.mathworks.com/help/stats/support-vector-machines-for-binary-classification.html)
 - [Motivating Kernel Functions](https://towardsdatascience.com/kernel-function-6f1d2be6091)
 - [Description of Kernel Functions](https://towardsdatascience.com/the-kernel-trick-c98cdbcaeb3f)
+- [Kernel Methods](http://www.cs.cmu.edu/~aarti/Class/10701_Spring14/slides/kernel_methods.pdf)
 - [Intuition of Kernel Functions](https://stats.stackexchange.com/questions/152897/how-to-intuitively-explain-what-a-kernel-is)
 - [Margins in Support Vector Machines](https://towardsdatascience.com/support-vector-machine-simply-explained-fee28eba5496)
 - [SVM Lecture Slides](http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf)

@@ -6,16 +6,12 @@ katex: true
 ---
 
 ### Motivating Cost Functions
-- We sometimes use gradient descent to train models such as linear regression and support vector machines when the training set is extremely large
-- In these cases, we've been using a quadratic cost function
+- The goal of backpropagation is to estimate parameters $w$ and $b$ by computing the partial derivatives $\frac{\partial J(w,b)}{\partial w}$ and $\frac{\partial J(w,b)}{\partial b}$ of a cost function $J(w,b)$
+- We use backpropagation to train our neural network, and we use gradient descent to find optimal estimates of our parameters
+- Up until now, we've been using a quadratic cost function
 - However, we can use other cost functions for other purposes
-- For example, we could use a cross-entropy cost function for classification problems, rather than a quadratic cost function for regression problems
-- Once we determine how to represent the output of our model, we'll be able to choose a cost function to learn our weights and biases
-
-### Introducing the Cost Function
-- At the heart of backpropagations is an expression for the partial derivative $\frac{\partial J(\theta)}{\partial \theta}$ of the cost function $J(\theta)$
-- Typically, $\theta$ is any weight $w$ or bias $b$ in the network
-- The goal of backpropagation is to compute the partial derivatives $\frac{\partial J(w,b)}{\partial w}$ and $\frac{\partial J(w,b)}{\partial b}$ of the cost function $J(w,b)$
+- For example, we typically use a cross-entropy cost function for classification problems, and a quadratic cost function for regression problems
+- We'll know which cost function to choose once we determine how to represent the output of our model
 
 ### Assumptions of Cost Functions
 - For backpropagation to work, we need to make two assumptions about the form of the cost function:
