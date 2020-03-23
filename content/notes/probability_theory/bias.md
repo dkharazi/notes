@@ -12,13 +12,13 @@ katex: true
 - Our goal is to find a model that has low bias and low variance
 
 ### Decomposition of Error
-- An error is the difference between our true value and our observed value
+- Error is the difference between the true value and observed value
 - We typically refer to our population parameter as our true value
 - An error is typically represented as a combination of a bias component, variance component, and irreducible errors:
 
 $$ Error = Bias^{2} + Variance + Irreducible Error $$
 
-- Bias can be thought of as the difference between our true value and our prediction:
+- Bias refers to the difference between a true value and a prediction:
 
 $$ Bias = \text{E}[\hat{\theta}] - \theta $$
 
@@ -104,6 +104,34 @@ $$ \text{Var}[\epsilon_{i}] = \sigma^{2} $$
 	- Regularizing our model
 	- Removing features from our model
 	- Including more data in our testing set
+
+### Synonyms for Bias-Variance Tradeoff
+- The bias-variance tradeoff is essentially a tradeoff between simplicity and complexity
+- It is a tradeoff between generalization and specificity
+- Learning algorithms typically over-learns a training dataset, because that's exactly what we are asking it to do
+- It is our job to apply some generalization to the model in order to find a balance
+- The bias-variance tradeoff is essentially a tradeoff between fitting a model to the training dataset as closely as possible and fitting a generalized model
+
+---
+
+### tldr
+
+- An estimator (or our model) has bias
+- An estimator (or our model) has variance
+- The random variable in our model has an expected value and variance
+- The bias of an estimator refers to how much predicted values differ from true values:
+
+$$ \text{bias} = \text{predicted} - \text{true} $$
+
+- The variance of an estimator refers to how predictions made on the same value vary on different realizations of the model:
+
+$$ \text{variance} = \text{predicted} - \text{average predicted value} $$
+
+- The bias of an estimator can be adjusted if we adjust the predicted values
+- The variance of an estimator can be adjusted if we adjust the predicted values
+- The variance of a random variable can be adjusted if we adjust the observations (i.e. add, decrease, modify, etc.)
+
+---
 
 ### References
 - [Bias and Variance Illustrations](http://scott.fortmann-roe.com/docs/BiasVariance.html)

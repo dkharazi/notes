@@ -27,13 +27,13 @@
      inkscape:window-height="711"
      id="namedview137"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="719.92913"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="1055.8838"
      inkscape:cy="226.77165"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g3539" />
+     inkscape:current-layer="g3711" />
   <defs
      id="defs33" />
   <metadata
@@ -635,7 +635,17 @@
                id="tspan3707"
                x="148.4342"
                y="238.47639"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.5;stroke-miterlimit:4.69999981;stroke-dasharray:none;stroke-dashoffset:0">y</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.5;stroke-miterlimit:4.69999981;stroke-dasharray:none;stroke-dashoffset:0">ŷ</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:0.93999999;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4.69999981;stroke-dasharray:none;stroke-dashoffset:0"
+             x="148.4342"
+             y="238.47639"
+             id="text943"><tspan
+               x="148.4342"
+               y="238.47639"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.5;stroke-miterlimit:4.69999981;stroke-dasharray:none;stroke-dashoffset:0"
+               id="tspan945">y</tspan></text>
         </g>
       </g>
     </g>

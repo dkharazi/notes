@@ -1,7 +1,7 @@
 ---
 title: "Recurrent Neural Network"
 draft: true
-weight: "13"
+weight: "16"
 katex: true
 ---
 

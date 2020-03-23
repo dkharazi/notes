@@ -1,7 +1,7 @@
 ---
 title: "Stochastic Gradient Descent"
 draft: true
-weight: "11"
+weight: "14"
 katex: true
 ---
 

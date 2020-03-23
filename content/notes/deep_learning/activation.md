@@ -48,6 +48,8 @@ katex: true
 - In other words, we should only use a linear activation function for output layers, and the linear output layer should only be used for regression problems
 - Even if we're interested in regression, we'll sometimes want to use the relu activation function instead of a linear activation function if we want to return real-valued, non-negative data $\hat{y}$
 
+![linearactivation](/img/linear_activation.svg)
+
 ### Defining Activation Functions
 - In a feedforward network, each neuron is computed the same:
 	1. First calculate $z$:
@@ -96,6 +98,17 @@ $$ (-1,1) $$
 - In other words, we shouldn't really use the sigmoid activation function unless our data $y$ is between $0$ and $1$
 - In this case, we would only use the sigmoid function for the output layer and maybe use tanh functions for our hidden layers
 
+### Motivating the Vanishing Gradient Problem
+- Many functions, such as the sigmoid and tanh functions, have a problem with a vanishing gradient
+- This problem occurs for activation functions that map the real number line onto a small range, such as $(0,1)$ or $(-1,1)$
+- As a result, there are large regions of the input space that are mapped to an extremely small range
+- In these regions of the input space, even a large change in the input will produce a small change in the output
+- Hence, the gradient is vanishing
+- Said another way, even a large change in the parameter values for the early layers doesn't have a big effect on the output
+- Gradient based methods learn a parameter's value by understanding how a small change in the parameter's value will affect the network's output
+- If a change in the parameter's value causes too small of a change in the network's output, then the network just can't learn the parameter effectively
+- Consequently, learning becomes slow for these functions
+
 ### Introducing the ReLU Activation Function
 - The relu formula is defined as the following:
 
@@ -109,18 +122,15 @@ $$ [0, \infty] $$
 
 - The relu function is one of the most popular activation functions
 - The relu function is preferred over the sigmoid and tanh functions
-- Many functions, such as the sigmoid and tanh functions, have a problem with a vanishing gradient
-- This problem occurs for functions that map the real number line onto a small range, such as $(0,1)$ or $(-1,1)$
-- As a result, there are large regions of the input space that are mapped to an extremely small range
-- In these regions of the input space, even a large change in the input will produce a small change in the output - hence the gradient is vanishing
-- Consequently, learning becomes slow for these functions
-- This problem is fixed by the relu function because it has a reduced likelihood of a vanishing gradient
-- Specifically, the relu function enforces constant derivative values equal to $1$ if $a>0$ and $0$ if $a \le 0$
+- The relu function doesn't have a problem with a vanishing gradient
+- Specifically, it doesn't have the property of *squashing* the input space into a small region
 - Even though half of the input space is $0$ for the relu activation function, we usually don't have to worry about the vanishing gradient because $a>0$ for most cases
 - Meaning, the relu function is computationally faster than the sigmoid and tanh functions
 
 ![reluderivative](/img/derivative_relu.svg)
 
+- The relu function enforces constant derivative values equal to $1$ if $a>0$ and $0$ if $a \le 0$
+- This property also makes it faster to learn
 - The relu function has the disadvantage of having dying cells, which limits the capacity of the network
 - This can be fixed using a variant of the relu, like leaky relu or elu
 

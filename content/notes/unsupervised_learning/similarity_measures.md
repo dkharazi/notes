@@ -167,6 +167,18 @@ $$ \theta = \arccos(\frac{\sum_{i=1}^{n}a_{i}b_{i}}{\Vert a \Vert \Vert b \Vert}
 - Where $\Vert a \Vert = \sqrt{\sum a^{2}}$
 - Where $\Vert b \Vert = \sqrt{\sum b^{2}}$
 
+### Hellinger Distance
+- The hellinger distance is used to quantify the similarity between two probability distributions
+- The hellinger distance is a probabilistic analog of the euclidean distance
+- Given two probability distributions $P$ and $Q$, the hellinger distance is defined as:
+
+$$ h(P,Q) = \frac{1}{\sqrt{2}} \Vert \sqrt{P} - \sqrt{Q} \Vert_{2} $$
+
+- The hellinger distance is useful when quantifying the difference between two probability distributions
+- For example, let's say we're estimating a distribution for users and a distribution for non-users of a service
+- If the hellinger distance is small between those groups for some features, then those features are not statistically useful for segmentation
+- The wasserstein metric is becoming a more preferred metric for measuring the similarity between two probability distributions
+
 ### Use-Cases for Euclidean Distance, Manhattan Distance, and Cosine Distance
 - The euclidean disance is represented as a distance in the physical world, which is a natural notion of distance
 - The euclidean distance is frequently used for finding the nearest hospital for emergency helicopter flights
@@ -216,3 +228,4 @@ $$ = \arccos(\frac{44}{6.2 \times 8.4}) = \arccos(0.84) = 0.57 $$
 - [Dice Coefficient and Accuracy Metric](https://stats.stackexchange.com/questions/195006/is-the-dice-coefficient-the-same-as-accuracy)
 - [Cosine Similarity for Vector Space Models](http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/)
 - [Jaccard Index used for Distance Calculations](https://www.dataminingapps.com/2016/06/can-you-explain-how-the-jaccard-index-can-be-used-for-distance-calculation/)
+- [What is Hellinger Distance](https://datascience.stackexchange.com/questions/22725/what-is-hellinger-distance-and-when-to-use-it/25091)

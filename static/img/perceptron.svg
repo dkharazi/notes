@@ -27,13 +27,13 @@
      inkscape:window-height="754"
      id="namedview83"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="566.92913"
+     inkscape:zoom="1"
+     inkscape:cx="702.92913"
      inkscape:cy="226.77165"
      inkscape:window-x="-1"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g1216" />
+     inkscape:current-layer="g130" />
   <defs
      id="defs2">
     <marker
@@ -82,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -133,15 +133,15 @@
          ry="10.111827" />
       <text
          id="text819"
-         y="240.96915"
+         y="242.44193"
          x="222.69928"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          xml:space="preserve"
          transform="scale(1.0091813,0.99090222)"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333397px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           y="240.96915"
+           y="242.44193"
            x="222.69928"
-           id="tspan817">y</tspan></text>
+           id="tspan817">ŷ</tspan></text>
     </g>
     <g
        transform="translate(7.8222543,-1.486104)"

@@ -6,9 +6,7 @@ katex: true
 ---
 
 ### Motivating Cost Functions
-- The goal of backpropagation is to estimate parameters $w$ and $b$ by computing the partial derivatives $\frac{\partial J(w,b)}{\partial w}$ and $\frac{\partial J(w,b)}{\partial b}$ of a cost function $J(w,b)$
-- We use backpropagation to train our neural network, and we use gradient descent to find optimal estimates of our parameters
-- Up until now, we've been using a quadratic cost function
+- Up until now, we've been using a quadratic cost function because we've only been dealing with regression
 - However, we can use other cost functions for other purposes
 - For example, we typically use a cross-entropy cost function for classification problems, and a quadratic cost function for regression problems
 - We'll know which cost function to choose once we determine how to represent the output of our model
@@ -28,7 +26,7 @@ g the partial derivatives $\frac{\partial J(w,b)}{\partial w}$ and $\frac{\parti
 - The quadratic cost function satisfies the second assumption as well because it takes in the outputs of our activations functions
 - In other words, our cost function satisfies this assumption since our predictions $h(x)$ are the output of our activation functions
 
-### Describing Cost Functions
+### Describing the Cross-Entropy Cost Function
 - Up until now, we've mostly used the quadratic cost function to learn $\theta_{0}$ and $\theta_{1}$ for regression problems
 - However, we can use a different cost function for classification problems, and other cost functions for other applications
 - For classification problems, we can use the cross-entropy cost function:
@@ -36,7 +34,24 @@ g the partial derivatives $\frac{\partial J(w,b)}{\partial w}$ and $\frac{\parti
 $$ Cost(h_{\theta}(x),y) = \begin{cases} - \log (h_{\theta}(x)) &\text{if } y=1 \cr - \log (1 - h_{\theta}(x)) &\text{if } y=0 \end{cases} $$
 
 - This is also known as the *Bernoulli negative log-likelihood* and *Binary Cross-Entropy*
-- This cost function has its own gradient with respect to the output of a neural network 
+- This cost function has its own gradient with respect to the output of a neural network
+- This cost function is typically used in logistic regression
+
+### Cost Function and Loss Function
+- We typically use the terms cost and loss functions interchangeably
+- However, there is actually a slight distinction between the two
+- Specifically, we can define a cost function as the following:
+
+$$ J(w,b) = \frac{1}{m} \sum_{i=1}^{m} \mathcal{L}(\hat{y}, y) $$
+
+- There are many types of loss functions that we can plug into a cost function
+- We could use a cross-entropy loss function for logistic regression:
+
+$$ \mathcal{L}(\hat{y}, y) = y \log(\hat{y}) + (1-y)\log(1-\hat{y}) $$
+
+- Or we could use a quadratic loss function for linear regression:
+
+$$ \mathcal{L}(\hat{y}, y) = (\hat{y} - y)^{2} $$
 
 ---
 
@@ -57,3 +72,4 @@ $$ Cost(h_{\theta}(x),y) = \begin{cases} - \log (h_{\theta}(x)) &\text{if } y=1 
 - [List of Cost Functions](https://jmlb.github.io/flashcards/2018/04/21/list_cost_functions_fo_neuralnets/)
 - [Uses of Cost Functions](https://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications)
 - [Cross-Entropy and Quadratic Loss Functions](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)
+- [PyTorch Cost Functions](https://github.com/torch/nn/blob/master/doc/criterion.md#nn.BCECriterion)
