@@ -90,7 +90,7 @@ $$ db^{1} = \frac{\partial J(w,b)}{\partial b^{1}} = \frac{\partial J(w,b)}{\par
 ### Computing Components of Forward Propagation
 - In forward propagation, our output is:
 
-$$ a^{l-1} $$
+$$ a^{l} $$
 
 - We cache $z^{l}$ and output the following:
 

@@ -86,6 +86,19 @@ $$ = w(1-\frac{\alpha \lambda}{m}) - \alpha(\text{from backprop}) $$
 - In other words, the $w(1-\frac{\alpha \lambda}{m})$ term causes the weight to decay in proportion to its size
 - For this reason, we sometimes refer to L2 normalization as *weight decay*
 
+### Other Ways of Reducing Overfitting
+- As we've already mentioned, regularization is a great way of reducing overfitting
+- However, we can use other methods to reduce overfitting in our neural network
+- Here are a few:
+	- Dropout Regularization
+		- This is another regularization method
+	- Data Augmentation
+		- This involves adjusting input images to generate more data
+		- Meaning, we could take our input images and flip, zoom, distort, etc.
+	- Early Stopping
+		- This involves stopping the training of a neural network early
+		- Specifically, we're trying to find the optimal number of iterations the provide us with the best parameters
+
 ---
 
 ### tldr
@@ -102,3 +115,4 @@ $$ = w(1-\frac{\alpha \lambda}{m}) - \alpha(\text{from backprop}) $$
 - [Regularizing your Netural Network](https://www.youtube.com/watch?v=6g0t3Phly2M&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=4)
 - [Basic Recipe for Machine Learning](https://www.youtube.com/watch?v=C1N_PDHuJ6Q&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=3)
 - [Difference between Weight Decay and Learning Rate](https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate)
+- [Other Ways of Reducing Overfitting](https://www.youtube.com/watch?v=BOCLq2gpcGU&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=8)

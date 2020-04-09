@@ -43,3 +43,5 @@ $$ y_{t} = \mu + y_{t-1} - \phi\epsilon_{t-1} $$
 - [Exponential Smoothing as an ARIMA Model](https://people.duke.edu/~rnau/411arim.htm#ses)
 - [Different Time Series Approaches](https://blogs.oracle.com/datascience/decomposition-based-approaches-to-time-series-forecasting)
 - [Exponential Smoothing and ARIMA Examples](https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/)
+- [Exponentially Weighted Averages](https://www.youtube.com/watch?v=lAq96T8FkTw&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=17)
+- [Understanding Exponentially Weighted Averages](https://www.youtube.com/watch?v=NxTFlzBjS-4&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=18)

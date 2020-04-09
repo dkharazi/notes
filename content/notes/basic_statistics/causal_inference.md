@@ -18,7 +18,16 @@ katex: true
 	- For example, ice cream sales and homicide rates are correlated, but the relationship is not causal (i.e. ice cream sales and homicides are most likely caused by weather)
 - Reversed causality
 	- This happens when our predictor variable actually causes our response variable
-	- An example of this is saying autism causes vacciations, rather than vaccinations cause autism
+	- An example of this is saying my bad mood causes it to rain, rather than rain causes me to be in a bad mood
+- Bidirectional causality
+	- Causality is not necessarily one-way
+	- An example of this is preserving grasslands causes there to be more elephants
+	- Also, having more elephants causes better preservation of grasslands
+		- This is because elephants feed the grass with manure and play a role in the ecosystem such that more elephants create more grass and vice versa
+- Coincidental causality
+	- This happens when our predictor variable and response variable aren't related at all, but correlate by chance
+	- An example of this relates to alternating bald-hairy Russian leaders
+	- Specifically, a bald state leader of Russia has succeeded a non-bald (i.e. hairy) leader, and vice versa, for nearly 200 years
 
 ### Testing Correlation and Causation
 - Determining correlation between two variable involves simpler statistical testing, such as hypothesis testing
@@ -28,3 +37,5 @@ katex: true
 - [Probability, Statistics, and Stochastic Processes](http://bactra.org/prob-notes/srl.pdf)
 - [Causality Wiki](https://en.wikipedia.org/wiki/Causality)
 - [Correlation is not Causation](https://rationalwiki.org/wiki/Correlation_does_not_imply_causation)
+- [Examples of Reverse Causation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation#B_causes_A_(reverse_causation_or_reverse_causality))
+- [Examples of Causality](https://simplicable.com/new/causality)

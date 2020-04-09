@@ -6,8 +6,8 @@ katex: true
 ---
 
 ### Motivating Regularization for Overfitting
-- Roughly speaking, weights are usually small for a model with a large amount of bias (i.e. underfitting)
-- Roughly speaking, weights are usually large for a model with a large amount of variance (i.e. overfitting)
+- Roughly speaking, weights are usually relatively smaller for a model with a large amount of bias (i.e. underfitting)
+- Roughly speaking, weights are usually relatively larger for a model with a large amount of variance (i.e. overfitting)
 - Regularization attempts to find a happy medium so the weights don't become too large or too small
 
 ![regularization](/img/regularization_overfitting.svg)
@@ -54,7 +54,9 @@ $$ a^{l} = tanh(z^{l}) $$
 ---
 
 ### tldr
--
+- Roughly speaking, weights are usually relatively smaller for a model with a large amount of bias (i.e. underfitting)
+- Roughly speaking, weights are usually relatively larger for a model with a large amount of variance (i.e. overfitting)
+- Regularization attempts to find a happy medium so the weights don't become too large or too small
 
 ---
 

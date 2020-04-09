@@ -1,7 +1,7 @@
 ---
 title: "Convolutional Neural Network"
 draft: true
-weight: "15"
+weight: "1"
 katex: true
 ---
 
