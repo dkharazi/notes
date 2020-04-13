@@ -41,23 +41,27 @@
      id="namedview10"
      showgrid="false"
      inkscape:zoom="0.4609375"
-     inkscape:cx="288.54237"
-     inkscape:cy="342.77966"
+     inkscape:cx="234.30508"
+     inkscape:cy="256"
      inkscape:window-x="298"
      inkscape:window-y="4"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <title
      id="title2">ionicons-v5-a</title>
-  <polyline
-     points="268 112 412 256 268 400"
-     style="fill:none;stroke:#bf616a;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px;stroke-opacity:1"
-     id="polyline4" />
-  <line
-     x1="392"
-     y1="256"
-     x2="100"
-     y2="256"
-     style="fill:none;stroke:#bf616a;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px;stroke-opacity:1"
-     id="line6" />
+  <g
+     id="g816"
+     transform="translate(0,87.757594)">
+    <polyline
+       id="polyline4"
+       style="fill:none;stroke:#bf616a;stroke-width:48px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       points="268 112 412 256 268 400" />
+    <line
+       id="line6"
+       style="fill:none;stroke:#bf616a;stroke-width:48px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       y2="256"
+       x2="100"
+       y1="256"
+       x1="392" />
+  </g>
 </svg>

@@ -8,20 +8,34 @@
     {{ .Content }}
   </div>
   <div class="notes-links">
-    {{ with .NextInSection }}
-      <li>
-        <a href="{{ .Permalink }}">
-          <img alt="arrow-back" src="/img/arrow-back.svg" width="25" height="25">
-        </a>
-      </li>
-    {{ end }}
-    {{ with .PrevInSection }}
-      <li>
-        <a href="{{ .Permalink }}">
-          <img alt="arrow-next" src="/img/arrow-next.svg" width="25" height="25">
-        </a>
-      </li>
-    {{ end }}
+    <ul class="link-back">
+      {{ with .NextInSection }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <img alt="arrow-back" src="/img/arrow-back.svg" width="25" height="25">
+          </a>
+        </li>
+        <li>
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+    </ul>
+    <ul class="link-next">
+      {{ end }}
+      {{ with .PrevInSection }}
+        <li>
+          <a href="{{ .Permalink }}">
+            {{ .Title }}
+          </a>
+        </li>
+        <li>
+          <a href="{{ .Permalink }}">
+            <img alt="arrow-next" src="/img/arrow-next.svg" width="25" height="25">
+          </a>
+        </li>
+      {{ end }}
+    </ul>
   </div>
 </div>
 

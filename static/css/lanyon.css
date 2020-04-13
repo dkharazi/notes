@@ -796,13 +796,12 @@ a.sidebar-nav-subitem:focus {
   content: "";
   width: 100px;
   height: 1px;
-  margin: 0.8rem auto;
+  margin: 2rem auto;
 }
 
-@media (min-width: 34em) {
-  .notes-links {
-    text-align: center;
-  }
+.notes-links ul {
+  padding-left: 0rem;
+  display: inline-block;
 }
 
 .notes-links li {
@@ -811,6 +810,23 @@ a.sidebar-nav-subitem:focus {
 
 .notes-links li+li {
   margin-left: 0.5rem;
+}
+
+.notes-links img {
+  margin: 0rem;
+}
+
+.notes-links .link-back {
+  float: left;
+}
+
+.notes-links .link-next {
+  float: right;
+}
+
+.notes-links a {
+  color: var(--link-color-hover);
+  text-decoration: none;
 }
 
 
