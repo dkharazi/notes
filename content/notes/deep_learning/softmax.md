@@ -74,6 +74,10 @@ $$ a^{[l]} = \begin{bmatrix} \frac{e^{5}}{176.3} \cr \cr \frac{e^{2}}{176.3} \cr
 ---
 
 ### tldr
+- Softmax regression is used when we're interested in multi-classification
+- Softmax regression refers to a form of regression on a network with an output layer that is the softmax activation function
+- A network with an output layer that is the softmax activation function will typically return a vector of predictions, instead of a single-number prediction
+- The number of neurons in the output layer will be equal to the number of classes $c$ that we're predicting on
 
 ---
 

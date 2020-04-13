@@ -751,7 +751,7 @@ a.sidebar-nav-subitem:focus {
 
 .notes {
   margin-top: 5rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .notes a:hover {
@@ -783,6 +783,34 @@ a.sidebar-nav-subitem:focus {
 
 .notes-content h3:first-child {
   margin-top: 1rem;
+}
+
+.notes-links {
+  padding-top: 4rem;
+  font-size: 1rem;
+  color: var(--masthead-color);
+}
+
+.notes-links::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 0.8rem auto;
+}
+
+@media (min-width: 34em) {
+  .notes-links {
+    text-align: center;
+  }
+}
+
+.notes-links li {
+  display: inline-block;
+}
+
+.notes-links li+li {
+  margin-left: 0.5rem;
 }
 
 
