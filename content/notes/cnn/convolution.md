@@ -134,6 +134,10 @@ $$ \overbrace{\def \arraystretch{1.5} \begin{array}{c|c|c} 1 & 0 & -1 \cr \hline
 
 $$ \overbrace{\def \arraystretch{1.5} \begin{array}{c|c|c} 1 & 0 & -1 \cr \hline 1 & 0 & -1 \cr \hline 1 & 0 & -1 \end{array}}^{\text{Red filter}} \qquad \overbrace{\def \arraystretch{1.5} \begin{array}{c|c|c} 1 & 0 & -1 \cr \hline 1 & 0 & -1 \cr \hline 1 & 0 & -1 \end{array}}^{\text{Green filter}} \qquad \overbrace{\def \arraystretch{1.5} \begin{array}{c|c|c} 1 & 0 & -1 \cr \hline 1 & 0 & -1 \cr \hline 1 & 0 & -1 \end{array}}^{\text{Blue filter}} $$
 
+### Example of Convolution over Volumes
+
+![convolutionexample](/img/convolution_example.svg)
+
 ### Alternative Visualization of Volumes
 - We can also visualize images and filters as cubes
 - Each pixel can be represented as a small block

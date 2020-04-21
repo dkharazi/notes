@@ -825,6 +825,7 @@ a.sidebar-nav-subitem:focus {
 }
 
 .notes-links a {
+  font-size: 0.8rem;
   color: var(--link-color-hover);
   text-decoration: none;
 }

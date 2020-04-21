@@ -28,8 +28,8 @@
      inkscape:window-height="711"
      id="namedview137"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="281.72143"
+     inkscape:zoom="1"
+     inkscape:cx="711.72143"
      inkscape:cy="323.66762"
      inkscape:window-x="129"
      inkscape:window-y="0"
@@ -1801,7 +1801,7 @@
                    y="284.86243"
                    x="433.37314"
                    id="tspan1178"
-                   sodipodi:role="line"></tspan></text>
+                   sodipodi:role="line" /></text>
             </g>
           </g>
           <g
@@ -2053,14 +2053,14 @@
           <text
              id="text1164"
              y="196.50897"
-             x="195.40536"
+             x="194.9541"
              style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
              xml:space="preserve"><tspan
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
                y="196.50897"
-               x="195.40536"
+               x="194.9541"
                id="tspan1162"
-               sodipodi:role="line">(5x5x6)</tspan></text>
+               sodipodi:role="line">(5x5x16)</tspan></text>
           <path
              style="fill:none;stroke:#000000;stroke-width:0.50339043;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              d="m 148.28087,183.90473 v -1.68191 h 69.94608 v 1.58846"
@@ -2485,6 +2485,17 @@
                x="275.34192"
                id="tspan1385"
                sodipodi:role="line">softmax</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="214.70937"
+             y="153.1002"
+             id="text1205"><tspan
+               sodipodi:role="line"
+               id="tspan1203"
+               x="214.70937"
+               y="162.46397"
+               style="stroke-width:0.26458332"></tspan></text>
         </g>
       </g>
     </g>
