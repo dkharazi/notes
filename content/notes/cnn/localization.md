@@ -1,5 +1,5 @@
 ---
-title: "Object Detection"
+title: "Object Localization"
 draft: true
 weight: "11"
 katex: true
@@ -80,17 +80,25 @@ $$ l_{1x}, l_{1y}, l_{2x}, l_{2y}, l_{3x}, l_{3y}, l_{4x}, l_{4y} $$
 - For example, the coordinates of the left corner of the leftward eye needs to always be $l_{1x}$ nad $l_{1y}$
 - And, the coordinates of the right corner of the rightward eyes needs to always be $l_{4x}$ and $l_{4y}$
 
-### Object Detection
-
 ---
 
 ### tldr
+- Localization refers to determining where in the picture is the object we've detected
+- There are three general types of image classification:
+	1. Image classification without localization
+	2. Image classification with localization
+	3. Object Detection
+- Image classification without localization refers to labeling an image with a broad category
+- Image classification with localization includes the following:
+	- Labeling an image with a broad category
+	- Providing a bounding box around the classified object
+- Our network can also output the $x$ and $y$ coordinates of the most important points in an image
+- These points are called *landmarks*
+- Essentially, these landmarks represent locations, rather than a bounding box
 
 ---
 
 ### References
-- [Object Detection](https://www.youtube.com/watch?v=5e5pjeojznk&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=25)
-- [Bounding Box Predictions](https://www.youtube.com/watch?v=gKreZOUi-O0)
 - [Landmark Detection](https://www.youtube.com/watch?v=rRB9iymNy1w&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=24)
 - [Object Localization](https://www.youtube.com/watch?v=GSwYGkTfOKk&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=23)
 - [State of Computer Vision](https://www.youtube.com/watch?v=c3zw6KI6dLc&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=22)
