@@ -34,9 +34,9 @@ $$ \text{Height} = 42 + 2.3 \times \text{Bacteria} + 11 \times \text{Sun} $$
 
 - We may believe the relationship between the amount of bacteria in the soil and the height of the shrub is different in the full compared to partial sun
 - Specifically, we may believe that:
-	- Shrubs with more bacteria in the soil tend to be taller if they have full sun exposure
-	- And shrubs with more bacteria in the soil tend be be shorter if they have partial sun exposure
-- In this situation, the slopes would have different signs
+	- Shrubs with a large amount of bacteria in the soil tend to be taller if they have full sun exposure
+	- And shrubs with a large amount of bacteria in the soil tend be be shorter if they have partial sun exposure
+- In this situation, the slopes would have the same signs
 - Or, we may believe that shrubs with more bacteria in the soil tend to be taller if they have full sun exposure and partial sun exposure, but the relationship is much more dramatic in full sun exposure compared to partial sun exposure
 - In this situation, the slopes would have the same sign, but very different magnitude
 - Therefore, it would be useful to add the following interaction term to our model:
@@ -60,6 +60,27 @@ $$ \text{Height} = (4.2 \times 1) + (3.2 \times 1) = 7.4 $$
 - The interaction term $\beta_0$ states that the effect of having more bacteria in the soil is different if a plant has full or partial levels of sun exposure
 - Essentially, the slopes of the regression lines between height and bacteria count are different for the different categories of sun exposure
 - And, $\beta_3$ indicates how different those slopes are
+
+### Example from Epidemiology
+- Let's say we know the following:
+	- A *NumDeaths* variable that refers to the number of deaths
+	- A *InfectionRate* variable that refers to the rate of infection
+	- A *DeathRate* variable that refers to the rate of death
+- We could define our model as the following:
+
+$$ NumDeaths = \beta_0 + \beta_1 Rate_{i} + \beta_2 Rate_{d} $$
+
+- We may believe the relationship between the infection rate and the number of deaths is different when the death rate is high compared to low
+- Specifically, we may believe that:
+	- Viruses with a higher infection rate have a higher number of deaths when the death rate is high
+        - And viruses with a higher infection rate have a lower number of deaths when the death rate is low
+- Said another way, we can also say:
+	- Viruses with a higher death rate have a higher number of deaths when the infection rate is high
+	- And viruses with a higher death rate have a lower number of deaths when the infection rate is low
+- In this situation, the slopes would have the same signs
+- Therefore, it would be useful to add the following interaction term to our model:
+
+$$ Deaths = \beta_0 + \beta_1(Rate_{i}) + \beta_2(Rate_{d}) + \beta_3(Rate_{i} \times Rate_{d}) $$
 
 ### References
 - [Truth about Linear Regression](http://www.stat.cmu.edu/~cshalizi/TALR/TALR.pdf)
