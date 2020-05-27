@@ -35,6 +35,7 @@
   --heading-color: #333;
   --masthead-bg: #268bd2;
   --masthead-color: #fff;
+  --shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
   --post-date-color: #ccc;
   --hr-color: rgba(0,0,0,.1);
   --kbd-color: var(--body-color);
@@ -369,6 +370,7 @@ tbody tr:nth-child(odd) th {
   font-size: 1rem;
   background-color: var(--masthead-bg);
   color: var(--masthead-color);
+  box-shadow: var(--shadow);
 }
 
 .masthead::after {
@@ -562,8 +564,8 @@ a.sidebar-nav-subitem:focus {
   display: block;
   width: 2.2rem;
   padding: .5rem .65rem;
-  color: #268bd2;
-  background-color: #fff;
+  color: var(--masthead-color);
+  background-color: var(--masthead-bg);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -583,8 +585,8 @@ a.sidebar-nav-subitem:focus {
 
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #268bd2;
+  color: var(--masthead-color);
+  background-color: var(--masthead-bg);
 }
 
 @media (min-width: 30.1rem) {
@@ -750,13 +752,19 @@ a.sidebar-nav-subitem:focus {
  */
 
 .notes {
-  margin-top: 5rem;
+  /* padding-top: 5rem; */
   /* margin-bottom: 4rem; */
 }
 
 .notes a:hover {
   color: var(--link-color-hover);
   transition: none;
+}
+
+.notes-masthead {
+	background-color: var(--masthead-bg);
+	padding-top: 5rem;
+  box-shadow: var(--shadow);
 }
 
 .notes-list {
@@ -770,9 +778,10 @@ a.sidebar-nav-subitem:focus {
 }
 
 .notes-title {
-  color: var(--masthead-bg);
+  color: #fff;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .notes-content h3 {
