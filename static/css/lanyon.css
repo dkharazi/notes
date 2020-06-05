@@ -35,7 +35,8 @@
   --heading-color: #333;
   --masthead-bg: #268bd2;
   --masthead-color: #fff;
-  --shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  --shadow-under: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  --shadow-within: inset 0 -10px 100px -10px #1b7bbf;
   --post-date-color: #ccc;
   --hr-color: rgba(0,0,0,.1);
   --kbd-color: var(--body-color);
@@ -370,7 +371,7 @@ tbody tr:nth-child(odd) th {
   font-size: 1rem;
   background-color: var(--masthead-bg);
   color: var(--masthead-color);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-under);
 }
 
 .masthead::after {
@@ -565,7 +566,6 @@ a.sidebar-nav-subitem:focus {
   width: 2.2rem;
   padding: .5rem .65rem;
   color: var(--masthead-color);
-  background-color: var(--masthead-bg);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -599,6 +599,10 @@ a.sidebar-nav-subitem:focus {
     border-top-width: .45rem;
     border-bottom-width: .15rem;
   }
+}
+
+.sidebar-toggle-transp {
+  color: var(--masthead-bg);
 }
 
 
@@ -764,7 +768,7 @@ a.sidebar-nav-subitem:focus {
 .notes-masthead {
 	background-color: var(--masthead-bg);
 	padding-top: 5rem;
-  box-shadow: var(--shadow);
+	box-shadow: var(--shadow-within), var(--shadow-under);
 }
 
 .notes-list {

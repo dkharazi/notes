@@ -16,6 +16,17 @@
     );
   });
 </script>
+<script>
+  var tog = document.querySelector('.sidebar-toggle');
+  window.onscroll = function () {
+    var mastheight = document.querySelector('.notes-masthead').clientHeight - 30;
+    if (document.body.scrollTop >= mastheight  || document.documentElement.scrollTop >= mastheight) {
+        tog.classList.add('sidebar-toggle-transp');
+    } else {
+        tog.classList.remove('sidebar-toggle-transp');
+    }
+  };
+</script>
 
 </body>
 </html>

@@ -53,10 +53,11 @@ katex: true
 - This is unlike many statically typed languages
 
 ### References
+- [Details about Duck Typing in Python](http://www.voidspace.org.uk/python/articles/duck_typing.shtml)
+- [What is Duck Typing?](https://stackoverflow.com/a/12459717/12777044)
 - [Python Essential Reference](http://index-of.co.uk/Python/Python%20Essential%20Reference,%20Fourth%20Edition.pdf)
 - [Example of Duck Typing](https://stackoverflow.com/a/4205396/12777044)
 - [Inheritance and Duck Typing in Python](https://realpython.com/inheritance-composition-python/)
-- [Details about Duck Typing](http://www.voidspace.org.uk/python/articles/duck_typing.shtml)
 - [Differences between Static and Dynamic Binding](http://www.dieter.handshake.de/pyprojects/zope/book/chap3.html)
 - [Good Example of Static Binding in Java](https://beginnersbook.com/2013/04/java-static-dynamic-binding/)
 - [An Example of Method Overriding in Java](https://www.geeksforgeeks.org/overriding-in-java/)

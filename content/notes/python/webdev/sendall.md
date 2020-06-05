@@ -1,7 +1,7 @@
 ---
 title: "socket.sendall"
 draft: true
-weight: "25"
+weight: "28"
 katex: true
 ---
 

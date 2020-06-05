@@ -53,6 +53,15 @@ katex: true
 - This contrasts to how the OS handles thread scheduling
 	- The OS prioritizes short-running tasks
 
+### When to Use Threads in Python
+- Threads should only be reserved for programs concerned with I/O
+- A good use case of I/O bound threads are network servers
+- For CPU bound threads, consider using:
+	- C extension modules
+	- multiprocesssing module
+- A C extension module could be `numpy`
+- Multiprocessing involves creating a separate process
+
 ### References
 - [Python Essential Reference](http://index-of.co.uk/Python/Python%20Essential%20Reference,%20Fourth%20Edition.pdf)
 - [Python in a Nuteshell](https://www.arp.com/medias/13916546.pdf)

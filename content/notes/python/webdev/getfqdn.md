@@ -1,7 +1,7 @@
 ---
 title: "socket.getfqdn"
 draft: true
-weight: "7"
+weight: "10"
 katex: true
 ---
 

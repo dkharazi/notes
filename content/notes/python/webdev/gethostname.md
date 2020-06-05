@@ -1,7 +1,7 @@
 ---
 title: "socket.gethostname"
 draft: true
-weight: "9"
+weight: "19"
 katex: true
 ---
 

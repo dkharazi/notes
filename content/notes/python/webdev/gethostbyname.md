@@ -1,7 +1,7 @@
 ---
 title: "socket.gethostbyname"
 draft: true
-weight: "8"
+weight: "11"
 katex: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "socket.getservbyname"
 draft: true
-weight: "12"
+weight: "13"
 katex: true
 ---
 

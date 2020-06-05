@@ -1,7 +1,7 @@
 ---
 title: "Basics of Networking"
 draft: true
-weight: "1"
+weight: "4"
 katex: true
 ---
 

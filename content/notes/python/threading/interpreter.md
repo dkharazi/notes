@@ -81,12 +81,19 @@ machine code, input --> | JVM interpreter | --> output
 	- Computations such as addition, division, etc.
 	- Data types are checked for dynamically-typed languages
 
-### Challenges of Writing Compilers for Python
-- Statically-typed languages are generally faster than dynamically-typed languages
-- This is because statically-typed languages give the compiler much more information
+### Summarizing Static and Dynamic Languages
+- Generally, a dynamically-typed language executes many common programming behaviors at runtime
+- A statically-typed language is able to execute these behaviors at compile time
+- This is because statically-typed languages give the compiler much more information (e.g. variable types, etc.)
 - Specifically, the compiler has information about the structure of the program and its data
 - With this information, the compiler will be able to optimize both memory access and computations
+- As a result, statically-typed languages are generally faster than dynamically-typed languages
+
+### Challenges of Writing Compilers for Python
 - Essentially, the bytecode of a statically-typed language will run faster compared to the bytecode of a dynamically-typed language
+- This is because bytecode of statically-typed languages still need to determine information like variable types
+	- Statically-typed languages have already done this
+	- Dynamically-typed languages need to do this because a user could pass a variable as a list, integer, etc. at runtime
 - To effectively compile dynamically-typed languages:
 	1. Enforce a static structure of data
 	2. Infer the types of all variables, classes, etc.
