@@ -1,0 +1,14 @@
+{{ partial "masthead.html" . }}
+  
+<div class="container">
+  <div class="post">
+    <div class="post-title">
+      <h2>{{ .Title }}</h2>
+    </div>
+    <span class="post-date">{{ dateFormat "January 02, 2006" .Date }}</span>
+    <div class="post-body">{{ .Content }}</div>
+  </div>
+</div>
+
+
+{{ partial "footer.html" . }}

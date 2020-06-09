@@ -1,0 +1,43 @@
+<!-- Sidebar toggle represented as checkbox -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-home">
+    <ul>
+      <li><a href="/about/about">About</a></li>
+      <li><a href="/">Blog</a></li>
+      <li><a href="/notes">Notes</a></li>
+      <li><a href="/projects/projects">Projects</a></li>
+    </ul>
+  </div>
+  <nav class="sidebar-nav">
+    {{ $url := .Permalink }}
+    {{ $idx := 0 }}
+    {{ range (where .Site.Home.Pages "Section" "notes") }}
+      {{ range .Pages }}
+        {{ if and (not (eq .Title "About")) (not (eq .Title "Blog")) }}
+          {{ $idx = add $idx 1 }}
+          <a class="sidebar-nav-item{{if eq $url .Permalink }} active{{end}}" href="{{ .Permalink }}" title="{{ .Title }}">
+            {{ if gt $idx 0 }}<b>{{$idx}}</b>{{end}} {{ .Title }}
+          </a>
+          {{ range $subindex, $subelement := .Page.Pages }}
+            {{ $subindex = add $subindex 1 }}
+            <a class="sidebar-nav-subitem{{if eq $url .Permalink}} active{{end}}" href="{{ $subelement.Permalink }}" title="{{ $subelement.Title }}">
+              <b>{{ $idx }}.{{ $subindex }}</b> {{ $subelement.Title }}
+            </a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </nav>
+</div>
+
+<script>
+function processAjaxData(response, urlPath){
+     document.getElementById("content").innerHTML = response.html;
+     document.title = response.pageTitle;
+     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+ }
+</script>
+
