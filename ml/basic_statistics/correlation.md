@@ -1,6 +1,6 @@
 ---
 title: "Correlation"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

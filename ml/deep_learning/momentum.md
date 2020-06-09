@@ -1,6 +1,6 @@
 ---
 title: "Gradient Descent with Momentum"
-draft: true
+draft: false
 weight: "23"
 katex: true
 ---

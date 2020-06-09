@@ -1,6 +1,6 @@
 ---
 title: "itertools.groupby"
-draft: true
+draft: false
 weight: "11"
 katex: true
 ---

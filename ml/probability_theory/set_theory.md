@@ -1,6 +1,6 @@
 ---
 title: "Set Theory in Statistics"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

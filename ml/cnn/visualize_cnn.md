@@ -1,6 +1,6 @@
 ---
 title: "Visualizing a CNN"
-draft: true
+draft: false
 weight: "16"
 katex: true
 ---

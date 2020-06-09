@@ -1,6 +1,6 @@
 ---
 title: "Gradient Checking"
-draft: true
+draft: false
 weight: "19"
 katex: true
 ---

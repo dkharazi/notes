@@ -1,6 +1,6 @@
 ---
 title: "Exponentially Weighted Averages"
-draft: true
+draft: false
 weight: "22"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Class Decorators"
-draft: true
+draft: false
 weight: "12"
 katex: true
 ---

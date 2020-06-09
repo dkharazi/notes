@@ -1,5 +1,5 @@
 ---
 title: "Parametric Regression"
-draft: true
+draft: false
 weight: "6"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Ordinary Least Squares Estimation"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

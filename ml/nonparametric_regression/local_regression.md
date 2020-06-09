@@ -1,6 +1,6 @@
 ---
 title: "Local Regression"
-draft: true
+draft: false
 weight: "6"
 katex: true
 ---

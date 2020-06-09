@@ -1,6 +1,6 @@
 ---
 title: "Moving Average Model"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

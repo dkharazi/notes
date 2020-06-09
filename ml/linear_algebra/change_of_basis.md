@@ -1,6 +1,6 @@
 ---
 title: "Change of Basis"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

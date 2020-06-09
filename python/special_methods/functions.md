@@ -1,6 +1,6 @@
 ---
 title: "Special Attributes"
-draft: true
+draft: false
 weight: "12"
 katex: true
 ---

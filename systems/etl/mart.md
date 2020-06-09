@@ -1,6 +1,6 @@
 ---
 title: "Data Mart"
-draft: true
+draft: false
 weight: "4"
 katex: true
 ---

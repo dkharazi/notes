@@ -1,6 +1,6 @@
 ---
 title: "Softmax Regression"
-draft: true
+draft: false
 weight: "29"
 katex: true
 ---

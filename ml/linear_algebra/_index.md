@@ -1,5 +1,5 @@
 ---
 title: "The Essence of Linear Algebra"
-draft: true
+draft: false
 weight: "5"
 ---

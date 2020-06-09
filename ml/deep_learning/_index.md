@@ -1,5 +1,5 @@
 ---
 title: "Deep Learning"
-draft: true
+draft: false
 weight: "14"
 ---

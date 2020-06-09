@@ -1,6 +1,6 @@
 ---
 title: "ARMA Model"
-draft: true
+draft: false
 weight: "4"
 katex: true
 ---

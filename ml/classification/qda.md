@@ -1,6 +1,6 @@
 ---
 title: "Quadratic Discriminant Analysis"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

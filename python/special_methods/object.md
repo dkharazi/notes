@@ -1,6 +1,6 @@
 ---
 title: "Object Behavior"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

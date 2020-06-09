@@ -1,6 +1,6 @@
 ---
 title: "Mini-Batch Gradient Descent"
-draft: true
+draft: false
 weight: "21"
 katex: true
 ---

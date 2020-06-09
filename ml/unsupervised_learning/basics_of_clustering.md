@@ -1,6 +1,6 @@
 ---
 title: "Basics of Clustering"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

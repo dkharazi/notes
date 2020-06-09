@@ -1,6 +1,6 @@
 ---
 title: "socket.gethostname"
-draft: true
+draft: false
 weight: "19"
 katex: true
 ---

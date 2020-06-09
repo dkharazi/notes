@@ -1,6 +1,6 @@
 ---
 title: "itertools.zip_longest"
-draft: true
+draft: false
 weight: "16"
 katex: true
 ---

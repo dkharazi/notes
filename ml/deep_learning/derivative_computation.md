@@ -1,6 +1,6 @@
 ---
 title: "Computing Derivatives"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

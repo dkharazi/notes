@@ -1,6 +1,6 @@
 ---
 title: "Face Recognition"
-draft: true
+draft: false
 weight: "14"
 katex: true
 ---

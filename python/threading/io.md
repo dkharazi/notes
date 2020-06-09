@@ -1,6 +1,6 @@
 ---
 title: "CPU and I/O Bound"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Part-of-Speech Tagging"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

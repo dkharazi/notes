@@ -1,5 +1,5 @@
 ---
 title: "Convolutional Neural Networks"
-draft: true
+draft: false
 weight: "15"
 ---

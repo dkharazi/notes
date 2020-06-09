@@ -1,5 +1,5 @@
 ---
 title: "Computer Architecture"
-draft: true
-weight: "1"
+draft: false
+weight: "2"
 ---

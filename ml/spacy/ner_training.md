@@ -1,6 +1,6 @@
 ---
 title: "Training Named Entity Recogizers"
-draft: true
+draft: false
 weight: "12"
 katex: true
 ---

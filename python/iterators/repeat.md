@@ -1,6 +1,6 @@
 ---
 title: "itertools.repeat"
-draft: true
+draft: false
 weight: "5"
 katex: true
 ---

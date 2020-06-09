@@ -1,6 +1,6 @@
 ---
 title: "Gradient-Based Learning"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

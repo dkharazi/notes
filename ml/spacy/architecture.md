@@ -1,6 +1,6 @@
 ---
 title: "Spacy Architecture"
-draft: true
+draft: false
 weight: "5"
 katex: true
 ---

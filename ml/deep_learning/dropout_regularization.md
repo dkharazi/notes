@@ -1,6 +1,6 @@
 ---
 title: "Dropout Regularization"
-draft: true
+draft: false
 weight: "13"
 katex: true
 ---

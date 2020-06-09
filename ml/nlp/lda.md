@@ -1,6 +1,6 @@
 ---
 title: "Latent Dirichlet Allocation"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

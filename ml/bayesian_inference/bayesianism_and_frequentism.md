@@ -1,6 +1,6 @@
 ---
 title: "Bayesianism and Frequentism"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

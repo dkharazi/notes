@@ -1,6 +1,6 @@
 ---
 title: "Sampling"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

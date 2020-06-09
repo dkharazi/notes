@@ -1,6 +1,6 @@
 ---
 title: "Examples of Markov Chains"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

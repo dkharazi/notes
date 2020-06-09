@@ -1,6 +1,6 @@
 ---
 title: "Spacy Pipeline"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

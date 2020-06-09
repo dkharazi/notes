@@ -1,6 +1,6 @@
 ---
 title: "Counting"
-draft: true
+draft: false
 weight: "6"
 katex: true
 ---

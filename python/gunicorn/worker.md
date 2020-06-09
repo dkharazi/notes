@@ -1,6 +1,6 @@
 ---
 title: "Worker Processes"
-draft: true
+draft: false
 weight: "13"
 katex: true
 ---

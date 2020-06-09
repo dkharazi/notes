@@ -1,6 +1,6 @@
 ---
 title: "socket.connect"
-draft: true
+draft: false
 weight: "17"
 katex: true
 ---

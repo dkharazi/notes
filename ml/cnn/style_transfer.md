@@ -1,6 +1,6 @@
 ---
 title: "Neural Style Transfer"
-draft: true
+draft: false
 weight: "17"
 katex: true
 ---

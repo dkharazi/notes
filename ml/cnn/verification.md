@@ -1,6 +1,6 @@
 ---
 title: "Face Verification"
-draft: true
+draft: false
 weight: "15"
 katex: true
 ---

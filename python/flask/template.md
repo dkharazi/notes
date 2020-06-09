@@ -1,6 +1,6 @@
 ---
 title: "Templates"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "socket.bind"
-draft: true
+draft: false
 weight: "16"
 katex: true
 ---

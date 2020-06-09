@@ -1,6 +1,6 @@
 ---
 title: "Named Entity Recognition"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

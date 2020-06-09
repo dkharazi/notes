@@ -1,6 +1,6 @@
 ---
 title: "The Token Class"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Mean, Median, and Mode"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

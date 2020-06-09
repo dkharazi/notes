@@ -1,6 +1,6 @@
 ---
 title: "Application Contexts"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

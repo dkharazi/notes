@@ -1,6 +1,6 @@
 ---
 title: "Monte Carlo Simulation"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

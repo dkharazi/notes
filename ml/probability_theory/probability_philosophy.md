@@ -1,6 +1,6 @@
 ---
 title: "Philosophy behind Probability"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

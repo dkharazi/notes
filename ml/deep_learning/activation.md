@@ -1,6 +1,6 @@
 ---
 title: "Linearity and Activation Functions"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Estimators and Parameters"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

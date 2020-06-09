@@ -1,6 +1,6 @@
 ---
 title: "Transfer Learning"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

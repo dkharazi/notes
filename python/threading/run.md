@@ -1,6 +1,6 @@
 ---
 title: "t.run"
-draft: true
+draft: false
 weight: "12"
 katex: true
 ---

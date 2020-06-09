@@ -1,6 +1,6 @@
 ---
 title: "socket.send"
-draft: true
+draft: false
 weight: "27"
 katex: true
 ---

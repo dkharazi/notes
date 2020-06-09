@@ -1,5 +1,5 @@
 ---
 title: "Time Series Analysis"
-draft: true
+draft: false
 weight: "11"
 ---

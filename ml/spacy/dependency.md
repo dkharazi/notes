@@ -1,6 +1,6 @@
 ---
 title: "Dependency Parsing"
-draft: true
+draft: false
 weight: "8"
 katex: true
 ---

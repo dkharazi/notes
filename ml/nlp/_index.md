@@ -1,5 +1,5 @@
 ---
 title: "Natural Language Processing"
-draft: true
+draft: false
 weight: "12"
 ---

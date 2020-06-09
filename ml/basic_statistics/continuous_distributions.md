@@ -1,6 +1,6 @@
 ---
 title: "Continuous Distributions"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

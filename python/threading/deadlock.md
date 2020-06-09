@@ -1,6 +1,6 @@
 ---
 title: "Race Conditions and Deadlocks"
-draft: true
+draft: false
 weight: "17"
 katex: true
 ---

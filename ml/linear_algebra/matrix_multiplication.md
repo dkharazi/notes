@@ -1,6 +1,6 @@
 ---
 title: "Matrix Multiplication"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

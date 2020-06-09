@@ -1,6 +1,6 @@
 ---
 title: "Axioms of a Vector Space"
-draft: true
+draft: false
 weight: "11"
 katex: true
 ---

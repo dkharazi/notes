@@ -1,6 +1,6 @@
 ---
 title: "Deployment"
-draft: true
+draft: false
 weight: "15"
 katex: true
 ---

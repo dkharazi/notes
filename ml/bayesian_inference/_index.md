@@ -1,5 +1,5 @@
 ---
 title: "Bayesian Inference"
-draft: true
+draft: false
 weight: "10"
 ---

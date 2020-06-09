@@ -1,6 +1,6 @@
 ---
 title: "Vanishing Gradient"
-draft: true
+draft: false
 weight: "16"
 katex: true
 ---

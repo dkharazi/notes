@@ -1,6 +1,6 @@
 ---
 title: "Composition"
-draft: true
+draft: false
 weight: "5"
 katex: true
 ---

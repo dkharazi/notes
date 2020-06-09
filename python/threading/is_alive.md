@@ -1,6 +1,6 @@
 ---
 title: "t.is_alive"
-draft: true
+draft: false
 weight: "14"
 katex: true
 ---

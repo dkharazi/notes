@@ -1,6 +1,6 @@
 ---
 title: "Sample Statistics"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

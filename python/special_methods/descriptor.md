@@ -1,6 +1,6 @@
 ---
 title: "Attribute Descriptors"
-draft: true
+draft: false
 weight: "6"
 katex: true
 ---

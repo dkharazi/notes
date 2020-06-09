@@ -1,6 +1,6 @@
 ---
 title: "Bios"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

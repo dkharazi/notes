@@ -1,6 +1,6 @@
 ---
 title: "Units of Computation"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

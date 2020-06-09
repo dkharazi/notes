@@ -1,6 +1,6 @@
 ---
 title: "Basics of Regularization"
-draft: true
+draft: false
 weight: "1"
 katex: true
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Probability Theory"
-draft: true
+draft: false
 weight: "3"
 ---

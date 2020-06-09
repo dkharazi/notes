@@ -1,6 +1,6 @@
 ---
 title: "socket.getnameinfo"
-draft: true
+draft: false
 weight: "18"
 katex: true
 ---

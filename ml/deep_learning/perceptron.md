@@ -1,6 +1,6 @@
 ---
 title: "Introducing Perceptrons"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

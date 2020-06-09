@@ -1,6 +1,6 @@
 ---
 title: "Maximum a Posteriori Estimation"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

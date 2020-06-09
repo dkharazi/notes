@@ -1,6 +1,6 @@
 ---
 title: "Variable Selection"
-draft: true
+draft: false
 weight: "16"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Probability Spaces"
-draft: true
+draft: false
 weight: "11"
 katex: true
 ---

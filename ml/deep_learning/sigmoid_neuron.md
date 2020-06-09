@@ -1,6 +1,6 @@
 ---
 title: "Sigmoid Neurons"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

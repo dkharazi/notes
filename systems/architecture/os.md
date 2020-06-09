@@ -1,6 +1,6 @@
 ---
 title: "Operating Systems"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

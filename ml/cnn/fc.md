@@ -1,6 +1,6 @@
 ---
 title: "Benefits of Convolution"
-draft: true
+draft: false
 weight: "5"
 katex: true
 ---

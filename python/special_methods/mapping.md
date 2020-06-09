@@ -1,6 +1,6 @@
 ---
 title: "Sequence and Mapping Methods"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

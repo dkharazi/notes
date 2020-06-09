@@ -1,6 +1,6 @@
 ---
 title: "Creation and Deletion"
-draft: true
+draft: false
 weight: "2"
 katex: true
 ---

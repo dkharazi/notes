@@ -1,6 +1,6 @@
 ---
 title: "Batch Normalization"
-draft: true
+draft: false
 weight: "28"
 katex: true
 ---

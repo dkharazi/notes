@@ -1,5 +1,5 @@
 ---
 title: "spaCy"
-draft: true
+draft: false
 weight: "13"
 ---

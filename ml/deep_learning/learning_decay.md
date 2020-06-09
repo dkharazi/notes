@@ -1,6 +1,6 @@
 ---
 title: "Learning Rate Decay"
-draft: true
+draft: false
 weight: "26"
 katex: true
 ---

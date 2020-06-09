@@ -1,6 +1,6 @@
 ---
 title: "Principle Component Analysis"
-draft: true
+draft: false
 weight: "7"
 katex: true
 ---

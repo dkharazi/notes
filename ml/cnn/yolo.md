@@ -1,6 +1,6 @@
 ---
 title: "YOLO Algorithm"
-draft: true
+draft: false
 weight: "13"
 katex: true
 ---

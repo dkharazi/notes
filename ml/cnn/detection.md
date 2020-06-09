@@ -1,6 +1,6 @@
 ---
 title: "Introducing Object Detection"
-draft: true
+draft: false
 weight: "12"
 katex: true
 ---

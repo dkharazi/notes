@@ -1,6 +1,6 @@
 ---
 title: "Multicollinearity"
-draft: true
+draft: false
 weight: "13"
 katex: true
 ---

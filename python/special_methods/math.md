@@ -1,6 +1,6 @@
 ---
 title: "Mathematical Operations"
-draft: true
+draft: false
 weight: "9"
 katex: true
 ---

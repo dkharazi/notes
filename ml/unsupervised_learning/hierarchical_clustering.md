@@ -1,6 +1,6 @@
 ---
 title: "Hierarchical Clustering"
-draft: true
+draft: false
 weight: "5"
 katex: true
 ---

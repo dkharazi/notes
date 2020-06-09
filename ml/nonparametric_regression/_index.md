@@ -1,5 +1,5 @@
 ---
 title: "Nonparametric Regression"
-draft: true
+draft: false
 weight: "7"
 ---

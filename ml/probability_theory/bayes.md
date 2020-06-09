@@ -1,6 +1,6 @@
 ---
 title: "Bayesian and Frequentist Estimation"
-draft: true
+draft: false
 weight: "3"
 katex: true
 ---

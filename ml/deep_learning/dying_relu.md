@@ -1,6 +1,6 @@
 ---
 title: "Dying ReLU"
-draft: true
+draft: false
 weight: "17"
 katex: true
 ---

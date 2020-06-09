@@ -1,5 +1,5 @@
 ---
 title: "Regularization"
-draft: true
+draft: false
 weight: "4"
 ---

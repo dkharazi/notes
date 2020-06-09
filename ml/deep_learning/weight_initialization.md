@@ -1,6 +1,6 @@
 ---
 title: "Weight Initialization"
-draft: true
+draft: false
 weight: "18"
 katex: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Encapsulation and Abstraction"
-draft: true
+draft: false
 weight: "10"
 katex: true
 ---

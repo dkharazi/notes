@@ -1,6 +1,6 @@
 ---
 title: "Orthogonalization"
-draft: true
+draft: false
 weight: "14"
 katex: true
 ---
