@@ -1,0 +1,48 @@
+{{ partial "header_notes.html" . }}
+
+<div class="notes">
+  <div class="notes-masthead">
+    <div class="container">
+      <h1 class="notes-title">
+        {{ .Title }}
+      </h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="notes-content">
+    {{ .Content }}
+    </div>
+    <div class="notes-links">
+      <ul class="link-back">
+        {{ with .NextInSection }}
+          <li>
+            <a href="{{ .Permalink }}">
+              <img alt="arrow-back" src="/img/arrow-back.svg" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </li>
+      </ul>
+      <ul class="link-next">
+        {{ end }}
+        {{ with .PrevInSection }}
+          <li>
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </li>
+          <li>
+            <a href="{{ .Permalink }}">
+              <img alt="arrow-next" src="/img/arrow-next.svg" width="20" height="20">
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{{ partial "footer_notes.html" . }}
