@@ -1,5 +1,5 @@
 ---
 title: "Probability and Statistics"
-draft: true
+draft: false
 weight: "2"
 ---
