@@ -5,6 +5,31 @@ weight: "1"
 katex: true
 ---
 
+### Motivating Network Communication
+- Servers communicate with each other by sending packets
+- These packets follow a network-layer protocol
+- A few network-layer protocols include:
+	- IP
+	- TCP
+- There are data chunks within those packets
+- These data chunks follow an application-layer protocol
+- A few application-layer protocols include:
+	- SOAP
+	- HTTP
+	- HTTPS
+	- FTP
+	- SMTP
+
+### Defining a Web and REST API
+- An API is a set of methods
+- It is used for communicating with other software components
+- An API with methods following an application-layer protocol is referred to as a *web API*
+- A web API that satisfies the following is considered a *REST API*:
+	- Resources are unambiguously requested via URIs
+	- HATEOUS
+- **H**ypermedia **a**s **t**he **e**ngine **o**f **a**pplication **s**tate is abbreviated as *HATEOUS*
+- HATEOUS is satisfied if transitions and actions are clearly exposed to the client by the server via hyperlinks and hypertext
+
 ### Defining a Web Service
 - Generally, a web service doesn't need a user interface
 - A web service operates over HTTP
@@ -13,7 +38,7 @@ katex: true
 - This API can be designed as a REST or SOAP API
 - A web service serves data in any format
 - This includes data formatted as XML, JSON, etc.
-- The following frameworks can be used to build REST APIs:
+- The following frameworks can be used to build web APIs:
 	- Node.js
 	- Flask
 	- Spring Boot
@@ -30,6 +55,17 @@ katex: true
 - In other words, the following properties are listed below:
 	- `Web Service:` Runs on the *server*
 	- `Web Application:` Runs as the *client*
+
+### Separating the Front-End and Back-End
+- Typically, the frontend and backend refer to different networks
+- The frontend does the following:
+	- Sends HTTP-formatted requests to the backend
+	- Interprets HTTP-formatted responses
+	- Extracts the JSON-formatted data if successful
+- The backend does the following:
+	- Interprets HTTP-formatted requests
+	- Sends HTTP-formatted responses to the frontend
+		- These contain a response code and JSON-formatted data
 
 ### Defining a Microservice
 - A microservice is a software architecture
@@ -69,3 +105,7 @@ katex: true
 - [What is a Web Service?](https://stackoverflow.com/a/1353702/12777044)
 - [Detailed Description of Microservices](https://stackoverflow.com/a/46576330/12777044)
 - [Entertaining Parody of Microservices](https://www.youtube.com/watch?v=y8OnoxKotPQ)
+- [Blog Post about HATEOUS](https://medium.com/unexpected-token/how-your-api-could-benefit-from-hypermedia-b62780771ccb)
+- [Definition of HATEOUS](https://restfulapi.net/hateoas/)
+- [Comparing a SOAP and REST API](https://stackoverflow.com/a/19884975/12777044)
+- [Comparing a Web and REST API](https://stackoverflow.com/a/19844272/12777044)

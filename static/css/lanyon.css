@@ -669,12 +669,12 @@ a.sidebar-nav-subitem:focus {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: 0.5rem;
   color: var(--post-date-color);
 }
 
 .post-body p:first-child {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* Related posts */

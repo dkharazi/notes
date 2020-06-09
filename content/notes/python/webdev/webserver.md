@@ -43,6 +43,43 @@ katex: true
 - Web servers achieve the functionality of application servers
 - However, they can remove load from the web server
 
+### Motivating Web Proxies
+- Generally, a *proxy* refers to something acting on behalf of something else
+- Technically, a *proxy* refers to a server acting on behalf of another server
+- There are two forms of web proxies:
+	- Forward proxy
+	- Reverse proxy
+
+### Defining a Forward Proxy
+- A forward proxy is performed client-side
+- It refers to an intermediary server on the client-side
+- This intermediary server forwards client requests to a server
+- Specifically, it forwards these requests to some web server
+- A forward proxy is used by a client for the following reasons:
+	- Client wants to send many requests to a server
+	- Client wants to bypass a firewall
+	- Client wants to get access to a blocked site
+- The following example involves the use of a forward proxy:
+	- There is a client from `www.client.com`
+	- The client is blocked from `www.server.com`
+	- The client uses a proxy server `www.proxy.com`
+	- The proxy server forwards client requests to the server
+
+### Defining a Reverse Proxy
+- A reverse proxy is performed server-side
+- It refers to an intermediary server on the server-side
+- This intermediary server forwards client requests to a server
+- Specifically, it forwards these requests to another web server
+- A reverse proxy is used by a server for the following reasons:
+	- Server wants to perform load balancing
+	- Server wants to prevent DOS attacks
+	- Server wants to add a level of security between the client and applciation server
+- The following example involves the use of a reverse proxy:
+	- There is a client from `www.client.com`
+	- The client sends a request to the `www.server.com`
+	- The server forwards the request to another server internally
+	- This server forwards the request to the application
+
 ### References
 - [Difference between Web Servers and Application Servers](https://stackoverflow.com/a/35360821/12777044)
 - [How Web and Application Servers work Together](https://www.nginx.com/resources/glossary/application-server-vs-web-server/)
@@ -51,3 +88,4 @@ katex: true
 - [What is Nginx?](https://kinsta.com/knowledgebase/what-is-nginx/)
 - [Examples of Nginx Configurations](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
 - [Rate Limiting with Nginx](https://www.nginx.com/blog/rate-limiting-nginx/)
+- [Blog Post about Forward and Reverse Proxies](https://medium.com/@abhishekbhardwaj510/forward-proxy-and-reverse-proxy-128e05e9e43a)

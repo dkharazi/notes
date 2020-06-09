@@ -1,7 +1,7 @@
 ---
 title: "Event Loop in JavaScript"
 draft: true
-weight: "12"
+weight: "4"
 katex: true
 ---
 

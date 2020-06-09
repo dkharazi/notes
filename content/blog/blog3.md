@@ -1,5 +1,5 @@
 ---
-title: "Blog3"
+title: "Building a Prototyping Pipeline in Python"
 date: "2020-01-10"
 draft: true
 katex: true

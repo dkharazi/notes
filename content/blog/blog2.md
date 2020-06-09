@@ -1,5 +1,5 @@
 ---
-title: "Blog2"
+title: "Learning Git using Google Docs"
 date: "2019-12-20"
 draft: true
 katex: true

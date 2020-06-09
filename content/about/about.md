@@ -10,7 +10,7 @@ Before Abercrombie, I worked as a consultant while studying statistics and compu
 
 What about stuff outside of technology?
 
-- I'm addicted to soccer and Indian food
+- My two passions in life are soccer and Indian food
 - On top of that, I enjoy skiing when I get the chance
 - I usually listen to either soft rock, indie pop, or lo-fi hip hop
 - I've done a triathlon and a few bike tours
