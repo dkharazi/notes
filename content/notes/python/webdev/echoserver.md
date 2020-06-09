@@ -9,7 +9,7 @@ katex: true
 
 ```python
 >>> import socket
->>> sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM
+>>> sock = socket(socket.AF_INET, socket.SOCK_STREAM)
 
 >>> # accepts all available hosts
 >>> # listen on port 8881

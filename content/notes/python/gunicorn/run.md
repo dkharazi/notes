@@ -17,7 +17,7 @@ katex: true
 ### Describing its Basic Usage
 - Gunicorn commands follow this format:
 
-```sh
+```bash
 $ gunicorn [OPTIONS] APP_MODULE
 ```
 
@@ -45,7 +45,7 @@ $ gunicorn [OPTIONS] APP_MODULE
 
 - We can run the app with the following command
 
-```sh
+```bash
 $ gunicorn --workers=2 test:app
 ```
 
